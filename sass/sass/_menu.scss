@@ -12,10 +12,10 @@
         padding: 0 2.6em 0 0;
         font-size: 1.063em;
         @include screen('tablet') {
-         padding: .5em 2.6em 0 0;
-         font-size: 1em; 
-     }
-     @include screen('mobile') {
+           padding: .5em 2.6em 0 0;
+           font-size: 1em; 
+       }
+       @include screen('mobile') {
         padding: 0 0 0 0;
     }
         // 第一層選單樣式
@@ -27,9 +27,9 @@
             >a {
                 display: block;
                 padding: 0 1em;
-                min-height: 2.5em;
+                min-height: 2em;
                 font-weight: bold;
-                line-height: 2.5em;
+                line-height: 2em;
                 color: $color-word;
             }
             &.hasChild {
