@@ -1,0 +1,588 @@
+<!doctype html>
+    <html lang="zh-Hant" class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>嘉義市公共圖書館</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!--pignose-->
+    <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header full">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">文化首頁</a></li>
+                        <li><a href="#">兒童版</a></li>
+                        <li><a href="#">常見問題</a></li
+                    </ul>
+                </nav>
+                <!-- navigation End -->
+                <!-- font_size -->
+                <div class="font_size">
+                  <span>字型大小：</span>
+                  <!-- 英文用<span>font-size：</span> -->
+                  <ul>
+                    <li><a href="#" class="small">A-</a></li>
+                    <li><a href="#" class="medium">A</a></li>
+                    <li><a href="#" class="large">A+</a></li>
+                </ul>
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/logo.svg" alt="嘉義市公共圖書館" /></a>
+            </h1>
+            <!-- Search Start -->
+            <div class="search">
+                <form action="" class="form_inline">
+                        <!-- <select name="" id="selectSample">
+                            <option value="" aria-labelledby="館藏查詢">館藏查詢</option>
+                            <option value="" aria-labelledby="選項二">選項二</option>
+                            <option value="" aria-labelledby="選項三">選項三</option>
+                        </select> -->
+                        <div class="form_grp">
+                            <label for="mustSameAsId">搜尋</label>
+                            <input name="username" id="mustSameAsId" type="text" placeholder="網站查詢" accesskey="S">
+                            <input name="" type="submit" title="查詢" value="查詢" />
+                        </div>
+                    </form>
+                </div>
+                <!-- Search End -->
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">關於圖書館</a>
+                            <ul>
+                                <li><a href="#">各館資訊</a></li>
+                                <li><a href="#">使用規定</a></li>
+                                <li><a href="#">開館時間</a></li>
+                                <li><a href="#">圖書館政策</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">數位資源</a>
+                            <ul>
+                                <li><a href="#">HyReadebook</a></li>
+                                <li><a href="#">udn讀書館</a></li>
+                                <li><a href="#">iRead ebook</a></li>
+                                <li><a href="#">華藝電子書</a></li>
+                                <li><a href="#">台灣雲端書庫</a></li>
+                                <li><a href="#">@嘉義市</a></li>
+                                <li><a href="#">電子書服務平台</a></li>
+                                <li><a href="#">設計師之手</a></li>
+                                <li><a href="#">解密圖書DNA</a></li>
+                                <li><a href="#">圓夢繪本資料庫</a></li>
+                                <li><a href="#">電影與文學資料庫</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">讀者服務</a>
+                            <ul>
+                                <li><a href="#">館藏査詢</a></li>
+                                <li><a href="#">使用規則</a></li>
+                                <li><a href="#">常見問答</a></li>
+                                <li><a href="#">活動報名</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">訊息公告</a></li>
+                        <li><a href="#">館藏查詢</a></li>
+                        <li><a href="#">主題活動</a>
+                            <ul>
+                                <li><a href="#">閱讀起步走</a></li>
+                                <li><a href="#">桃城文學獎</a></li>
+                                <li><a href="#">多元閱讀活動</a></li>
+                                <li><a href="#">本土語言閱讀活動</a></li>
+                                <li><a href="#">提升民眾英語學習力</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">好站連結</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+
+                <!-- 讀者登入 -->
+                <div class="login">
+                    <button class="login-btn" onclick="openRight()">讀者登入</button>
+                    <div class="login-animate-right" style="display:none;right:0;" id="rightMenu">
+                        <button onclick="closeRight()" class="close-btn">&times;</button>
+                        <form action="">
+                            <div class="form_inline">
+                                <div class="form_grp">
+                                    <label for="username">帳號：</label>
+                                    <input name="username" type="text" placeholder="請輸入帳號">
+                                </div>
+                                <div class="form_grp">
+                                    <label for="password">密碼：</label>
+                                    <input name="password" type="password" placeholder="請輸入密碼">
+                                </div>
+                                <div class="check_grp">
+                                    <label><input type="checkbox">記住帳號</label>
+                                </div>
+                                <div class="btn_grp">
+                                    <buttom type="button" class="btn">登入</buttom>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 讀者登入 end-->
+                <!--讀者已登入狀態-->
+                <!-- <div class="login">
+                    <button class="login-btn" onclick="openRight()">讀者登出</button>
+                    <div class="login-animate-right" style="display:none;right:0;" id="rightMenu">
+                        <button onclick="closeRight()" class="close-btn">&times;</button>
+                        <form id="memberlogin" action="" method="post" class="form_inline">
+                            <p class="reader">
+                                歡迎，<span class="reader_name">凌網測試讀者</span>
+                            </p>
+                            <ul>
+                                <li class="reader_borrow">借閱中<span>0</span></li>
+                                <li class="reader_overdue">逾期未歸<span>0</span></li>
+                                <li class="reader_violation">違規天數<span>0</span></li>
+                                <li class="reader_booked">預約<span>0</span></li>
+                                <li class="reader_arrival">已到館<span>0</span></li>
+                            </ul>
+                            <div class="btn_grp">
+                                <button class="btn" onclick="member()">個人書房</button>
+                                <a class="btn" id="btn_logout" title="登出" href="sp?xdUrl=/wSite/MemberManager/SSOLogout.jsp&amp;mp=1">登出</a>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+
+                <!--讀者已登入狀態 end-->
+                <script>
+                  function openRight() {
+                      document.getElementById("rightMenu").style.display = "block";
+                  }
+
+                  function closeRight() {
+                      document.getElementById("rightMenu").style.display = "none";
+                  }
+              </script>
+          </div>
+      </header>
+      <!-- header End -->
+      <!-- main Start -->
+      <div id="center" class="main innerpage">
+        <!-- 內頁新增一個classname-->
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+
+        <div class="container">
+            <!-- breadcrumb路徑 -->
+            <div class="function_nav">
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li>最新消息</li>
+                    </ul>
+                </div>
+                <div class="function">
+                    <ul>
+                        <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                        <li class="print"><a href="#">友善列印</a></li>
+                        <li class="forward"><a href="#">轉寄友人</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- h2節點 -->
+            <h2 class="title">閱覽規定</h2>
+            <div class="function_panel">
+                <ul>
+                    <li class="publish_time">
+                        發布日期：<time>2019-01-01</time>
+                    </li>
+                    <li class="issued">
+                        發布單位：<span>嘉義市公共圖書館</span>
+                    </li>
+                    <li class="update_time">
+                        更新日期：<time>2019-01-01</time>
+                    </li>
+                    <li class="click_times">
+                        點閱次數：<span>2566</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 社群分享 -->
+            <div class="share">
+                <ul>
+                    <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_line_round.png" alt="line"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_googleplus.png" alt="google plus"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="images/basic/icon_rss.png" alt="RSS"></a></li>
+                </ul>
+            </div>
+            <section class="cp">
+                <div class="pic">
+                    <!-- 此範例為4:3比例 -->
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/demo/02.jpg">
+                            <source media="(min-width: 992px)" srcset="images/demo/02.jpg">
+                                <source media="(min-width: 576px)" srcset="images/demo/02.jpg">
+                                    <source media="(max-width: 575px)" srcset="images/demo/02.jpg">
+                                        <img data-original="images/demo/02.jpg" class="lazy">
+                                        <noscript><img src="images/demo/02.jpg"></noscript>
+                                    </picture>
+                                    <span>圖說</span>
+                                </div>
+                                <h3>開放時間</h3>
+                                <ul class="no-style">
+                                    <li>(一)開放時間：公告於本處網站，本館開放時間內民眾可入館閱覽、申請借閱證及借、還書服務。</li>
+                                    <li>(二)6歲以下或需成人陪同之兒童進館時，需有成年人陪同照顧，並注意其安全，本館不負照顧之責。</li>
+                                    <li>(三)每週一及經本處公告之放假日為休館日，不對外開放。</li>
+                                </ul>
+                                <h3>標題三</h3>
+                                <p>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。</p>
+                                <blockquote>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。</blockquote>
+                                <h4>標題四</h4>
+                                <p>連結文字樣式 </a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
+                                <h5>標題五</h5>
+                                <p>連結文字樣式</a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
+                                <h6>標題六</h6>
+                                <p>連結文字樣式</a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
+                                <h3>列表樣式</h3>
+                                <ul>
+                                    <li>影開兒中不們西動會味理化由子常洲國有標題</li>
+                                    <li>首動我行得流事個要使著獨操大</li>
+                                    <li>推列黃上道有畫走長市上</li>
+                                    <li>證會不就人推陸跑公片重</li>
+                                    <li>處來在山工國生即工球一，易心個長什去實用當們公有也候</li>
+                                </ul>
+                                <ol>
+                                    <li>影開兒中不們西動會味理化由子常洲國有標題</li>
+                                    <li>首動我行得流事個要使著獨操大</li>
+                                    <li>推列黃上道有畫走長市上</li>
+                                    <li>證會不就人推陸跑公片重</li>
+                                    <li>處來在山工國生即工球一，易心個長什去實用當們公有也候</li>
+                                </ol>
+                                <h3>表格樣式</h3>
+                                <table>
+                                    <tr>
+                                        <th>th 1</th>
+                                        <th>th 2</th>
+                                        <th>th 3</th>
+                                        <th>th 4</th>
+                                        <th>th 5</th>
+                                        <th>th 6</th>
+                                    </tr>
+                                    <tr>
+                                        <th>th A</th>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                    </tr>
+                                    <tr>
+                                        <th>th B</th>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                    </tr>
+                                    <tr>
+                                        <th>th C</th>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                        <td>td 資料</td>
+                                    </tr>
+                                </table>
+                            </section>
+                            <!-- CP End -->
+                            <div class="web_link">
+                                <h3>外部連結</h3>
+                                <ol>
+                                    <li><a href="javscript:;">外部連結1</a></li>
+                                    <li><a href="javscript:;">外部連結2</a></li>
+                                    <li><a href="javscript:;">外部連結3</a></li>
+                                    <li><a href="javscript:;">外部連結4</a></li>
+                                    <li><a href="javscript:;">外部連結5</a></li>
+                                </ol>
+                            </div>
+                            <!-- file download 檔案下載 -->
+                            <div class="file_download">
+                                <h3>檔案下載</h3>
+                                <ul>
+                                    <li> <span>檔案名稱</span>
+                                        <a href="xxxx.doc">檔案名稱.doc</a>
+                                        <a href="xxxx.docx">檔案名稱.docx</a>
+                                        <a href="xxxx.odt">檔案名稱.odt</a>
+                                    </li>
+                                    <li><span>檔案名稱</span>
+                                        <a href="xxxx.xls">檔案名稱.xls</a>
+                                        <a href="xxxx.xlsx">檔案名稱.xlsx</a>
+                                        <a href="xxxx.csv">檔案名稱.csv</a>
+                                        <a href="xxxx.ods">檔案名稱.ods</a>
+                                    </li>
+                                    <li><span>檔案名稱</span>
+                                        <a href="xxxx.ppt">檔案名稱.ppt</a>
+                                        <a href="xxxx.pptx">檔案名稱.pptx</a>
+                                        <a href="xxxx.odp">檔案名稱.odp</a>
+                                        <a href="xxxx.pdf">檔案名稱.odp</a>
+                                    </li>
+                                    <li><span>檔案名稱</span>
+                                        <a href="xxxx.zip">檔案名稱.zip</a>
+                                        <a href="xxxx.txt">檔案名稱.txt</a>
+                                        <a href="xxxx.mov">檔案名稱.mov</a>
+                                        <a href="xxxx.mp3">檔案名稱.mp3</a>
+                                        <a href="xxxx.jpg">檔案名稱.jpg</a>
+                                        <a href="xxxx.wmv">檔案名稱.wmv</a>
+                                        <a href="xxxx.mp4">檔案名稱.mp4</a>
+                                        <a href="xxxx.xxxxx">檔案名稱.mp4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="attach_pic">
+                                <h3>附加圖片</h3>
+                                <ul>
+                                    <li>
+                                        <div class="img-container">
+                                            <!-- 此範例為4:3比例 -->
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                            </picture>
+                                                        </div>
+                                                        <div class="caption">活動照片</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="img-container">
+                                                            <!-- 此範例為4:3比例 -->
+                                                            <picture>
+                                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                                            </picture>
+                                                                        </div>
+                                                                        <div class="caption">活動照片</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="img-container">
+                                                                            <!-- 此範例為4:3比例 -->
+                                                                            <picture>
+                                                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                                                            </picture>
+                                                                                        </div>
+                                                                                        <div class="caption">活動照片</div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div class="img-container">
+                                                                                            <!-- 此範例為4:3比例 -->
+                                                                                            <picture>
+                                                                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                                                                            </picture>
+                                                                                                        </div>
+                                                                                                        <div class="caption">活動照片</div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="img-container">
+                                                                                                            <!-- 此範例為4:3比例 -->
+                                                                                                            <picture>
+                                                                                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                                                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                                                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                                                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                                                                                            </picture>
+                                                                                                                        </div>
+                                                                                                                        <div class="caption">活動照片</div>
+                                                                                                                    </li>
+                                                                                                                    <li>
+                                                                                                                        <div class="img-container">
+                                                                                                                            <!-- 此範例為4:3比例 -->
+                                                                                                                            <picture>
+                                                                                                                                <source media="(min-width: 1200px)" data-srcset="images/demo/07.jpg">
+                                                                                                                                    <source media="(min-width: 992px)" data-srcset="images/demo/07.jpg">
+                                                                                                                                        <source media="(min-width: 576px)" data-srcset="images/demo/07.jpg">
+                                                                                                                                            <source media="(max-width: 575px)" data-srcset="images/demo/07.jpg">
+                                                                                                                                                <img data-original="images/demo/07.jpg" alt="FFF" class="lazy">
+                                                                                                                                                <noscript><img src="images/demo/07.jpg"></noscript>
+                                                                                                                                            </picture>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="caption">活動照片</div>
+                                                                                                                                    </li>
+                                                                                                                                </ul>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <!-- fatfooter Start -->
+                                                                                                            <section class="fatfooter">
+                                                                                                                <div class="container">
+                                                                                                                    <button type="button" name="收合" class="btn btn-fatfooter">CLOSE</button>
+                                                                                                                    <nav>
+                                                                                                                        <ul>
+                                                                                                                            <li><a href="#">關於圖書館</a>
+                                                                                                                                <ul>
+                                                                                                                                    <li><a href="#">各館資訊</a></li>
+                                                                                                                                    <li><a href="#">使用規定</a></li>
+                                                                                                                                    <li><a href="#">開館時間</a></li>
+                                                                                                                                    <li><a href="#">圖書館政策</a></li>
+                                                                                                                                </ul>
+                                                                                                                            </li>
+                                                                                                                            <li><a href="#">訊息公告</a>
+                                                                                                                                <ul>
+                                                                                                                                    <li><a href="#">重要公告</a></li>
+                                                                                                                                    <li><a href="#">活動資訊</a></li>
+                                                                                                                                    <li><a href="#">新聞稿</a></li>
+                                                                                                                                    <li><a href="#">轉知訊息</a></li>
+                                                                                                                                    <li><a href="#">統計報表</a></li>
+                                                                                                                                </ul>
+                                                                                                                            </li>
+                                                                                                                            <li><a href="#">讀者服務</a>
+                                                                                                                                <ul>
+                                                                                                                                    <li><a href="#">館藏査詢</a></li>
+                                                                                                                                    <li><a href="#">使用規則</a></li>
+                                                                                                                                    <li><a href="#">常見問答</a></li>
+                                                                                                                                    <li><a href="#">活動報名</a></li>
+                                                                                                                                </ul>
+                                                                                                                            </li>
+                                                                                                                            <li><a href="#">數位資源</a>
+                                                                                                                                <ul>
+                                                                                                                                    <li><a href="#">HyReadebook</a></li>
+                                                                                                                                    <li><a href="#">udn讀書館</a></li>
+                                                                                                                                    <li><a href="#">iRead ebook</a></li>
+                                                                                                                                    <li><a href="#">華藝電子書</a></li>
+                                                                                                                                    <li><a href="#">台灣雲端書庫</a></li>
+                                                                                                                                    <li><a href="#">@嘉義市</a></li>
+                                                                                                                                    <li><a href="#">電子書服務平台</a></li>
+                                                                                                                                    <li><a href="#">設計師之手</a></li>
+                                                                                                                                    <li><a href="#">解密圖書DNA</a></li>
+                                                                                                                                    <li><a href="#">圓夢繪本資料庫</a></li>
+                                                                                                                                    <li><a href="#">電影與文學資料庫</a></li>
+                                                                                                                                </ul>
+                                                                                                                            </li>
+                                                                                                                            <li><a href="#">主題活動</a>
+                                                                                                                                <ul>
+                                                                                                                                    <li><a href="#">閱讀起步走</a></li>
+                                                                                                                                    <li><a href="#">桃城文學獎</a></li>
+                                                                                                                                    <li><a href="#">多元閱讀活動</a></li>
+                                                                                                                                    <li><a href="#">本土語言閱讀活動</a></li>
+                                                                                                                                    <li><a href="#">提升民眾英語學習力</a></li>
+                                                                                                                                </ul>
+                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                                                                                    </nav>
+                                                                                                                </div>
+                                                                                                            </section>
+                                                                                                            <!-- fatfooter End -->
+                                                                                                            <!-- footer Start-->
+                                                                                                            <footer>
+                                                                                                                <div class="container">
+                                                                                                                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+
+                                                                                                                    <div class="col-6-6">
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="footer_info">
+                                                                                                                                <p class="Copyright">
+                                                                                                                                    地址：60081 嘉義市忠孝路275號     電話：(05)2788225
+                                                                                                                                </p>
+                                                                                                                                <p>
+                                                                                                                                    <span class="counter">今日瀏覽人次：<em>11,205</em></span>
+                                                                                                                                    <span class="counter">本月瀏覽人次：<em>22,666</em></span>
+                                                                                                                                </p>
+                                                                                                                                <p>
+                                                                                                                                    <span class="counter">年度瀏覽人次：<em>300,456</em></span>
+                                                                                                                                    <span class="counter">累計瀏覽人次：<em>2,022,3336</em></span>
+                                                                                                                                </p>
+                                                                                                                                <p>
+                                                                                                                                    <span class="update">更新日期：<em>2022/07/01</em></span>
+                                                                                                                                </p>
+                                                                                                                            </div>
+                                                                                                                            <div class="footer_icon">
+                                                                                                                                <a target="_blank" href="javascript:;" title="另開視窗">
+                                                                                                                                    <img src="images/basic/accessibility.jpg" alt="">
+                                                                                                                                </a>
+                                                                                                                                <a target="_blank" href="javascript:;" title="另開視窗">
+                                                                                                                                    <img src="images/basic/egov.png" alt="">
+                                                                                                                                </a>
+                                                                                                                            </div>
+                                                                                                                            <ul class="footer_link">
+                                                                                                                                <li><a href="javascript:;">隱私權政策</a></li>
+                                                                                                                                <li><a href="javascript:;">網站安全政策</a></li>
+                                                                                                                                <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                                                                                                                            </ul>
+                                                                                                                            <p class="copyright">版權所有 ©2021 All Rights Reserved</p>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="qrcode">
+                                                                                                                                <ul>
+                                                                                                                                    <li><img src="images/qrcode.jpg" alt=""><span>Android</span></li>
+                                                                                                                                    <li><img src="images/qrcode2.jpg" alt=""><span>ios</span></li>
+                                                                                                                                </ul>
+
+                                                                                                                            </div>
+                                                                                                                            <div class="browser">建議瀏覽器：IE10.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</div>
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+                                                                                                            </footer>
+                                                                                                            <!-- footer End -->
+                                                                                                        </div>
+                                                                                                        <a href="javascript:;" class="scrollToTop">回頁首</a>
+                                                                                                        <!-- JQ -->
+                                                                                                        <script src="js/jquery-3.3.1.min.js"></script>
+                                                                                                        <!-- 外掛 plugin js -->
+                                                                                                        <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+                                                                                                        <script src="vendor/slick/slick.js "></script><!-- slick -->
+                                                                                                        <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+                                                                                                        <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+                                                                                                        <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+                                                                                                        <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+                                                                                                        <script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
+                                                                                                        <!-- hyUI -->
+                                                                                                        <script src="js/hyui.js"></script>
+                                                                                                        <!-- 客製js -->
+                                                                                                        <script src="js/customize.js"></script>
+                                                                                                    </body>
+
+                                                                                                    </html>
