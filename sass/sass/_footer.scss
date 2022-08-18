@@ -52,17 +52,17 @@ footer {
     }
     .qrcode{
         ul{
-            margin: 0;
+            margin: -.5em 0 0 0;
             padding: 0;
             font-size: .813em;
             text-align: center;
 
             li{
-                width: 120px;
+                width: 116px;
                 display: inline-block;
                 list-style: none;
                 margin:1em;
-                padding: 5px;
+                padding: 0 5px;
                 @include screen('tablet') {
                   width: 100px;  
               }
@@ -166,6 +166,7 @@ footer {
         position: absolute;
         top:8.5em;
         left:10px;
+        min-width: 200px;
         @include screen('tablet') {
             top:8.5em;
             left:10px;
@@ -178,6 +179,7 @@ footer {
 
         a {
             display: inline-block;
+            white-space: nowrap;
             vertical-align: top;
             position:relative;
             &:focus {
