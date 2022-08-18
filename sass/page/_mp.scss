@@ -327,8 +327,17 @@ section {
     position: absolute;
     right: 20px;
     top: 25px;
+    min-width: 230px;
+    label{
+        float: left;
+        line-height: 2em;
+    }
+
     @include screen('mobile') {
         position: static;
+        label{
+            float: none;
+        }
     }
 }
 //最新消息
