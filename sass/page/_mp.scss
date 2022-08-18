@@ -840,10 +840,10 @@ section {
         }
     }
     .bout{
-     font-size: .938em;
-     text-align: center;
-     color: $color-word;
- }
+       font-size: .938em;
+       text-align: center;
+       color: $color-word;
+   }
 }
 
 .calendar_wrap{
@@ -977,8 +977,8 @@ section {
         padding: .85em 1em;
         margin:.2em 0;
         text-align: center;
-        background-color: #282828;
-        color: #fff;
+        background-color:rgba(255, 255, 255, 0);
+        color: $color-word;
         text-decoration: none;
         border:0;
         border-radius: 0;
@@ -987,11 +987,10 @@ section {
         min-width: 8em;
         @include box-sizing;
         &:hover, &.active{
-            background: $secondaryColor;
+            background: $primaryColor;
             color:#fff;
             box-shadow:none;
         }
-
     }
     button{
         &.active{
@@ -1108,12 +1107,12 @@ section {
                 width: 100%;
                 float: none;
                 li{
-                 position: relative;
-                 padding:0 0 0 10em;
-                 margin: 0 0 1em;
+                   position: relative;
+                   padding:0 0 0 10em;
+                   margin: 0 0 1em;
 
-             }
-             .unit{
+               }
+               .unit{
                 background-color: #cccccc;
                 width: 8.5em;
                 margin: 0  0 1em 0;
@@ -1211,9 +1210,9 @@ section {
     top: 3.2em;
     z-index: 9999;
     @include screen('mobile') {
-     top: 70px; 
- }
- .login-btn{
+       top: 70px; 
+   }
+   .login-btn{
     margin: 0 -1px 0 0;
     width: 2.5em;
     min-width: 2.5em;
@@ -1247,10 +1246,10 @@ section {
         right:0;
         top:0;
         &:hover{
-           background: darken($secondaryColor,15); 
-       }
-   }
-   .login-animate-right{
+         background: darken($secondaryColor,15); 
+     }
+ }
+ .login-animate-right{
     width: 300px;
     min-height: 5em;
     padding:2em 1em 1em;
@@ -1286,12 +1285,12 @@ section {
             color:#fff;
             border: none;
             &:hover{
-               background: darken($secondaryColor,15); 
-           }
-       }
+             background: darken($secondaryColor,15); 
+         }
+     }
 
-   }
-   @include screen('mobile') {
+ }
+ @include screen('mobile') {
     label{
         display: inline-block;
     }
