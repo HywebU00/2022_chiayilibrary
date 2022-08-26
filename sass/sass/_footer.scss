@@ -39,14 +39,14 @@ footer {
         padding: .5em 0 2em 180px;
         margin: 0;
         opacity:.9;
-        background: url('../images/logo.png')no-repeat left center;
+        background: url('../images/logo2.png')no-repeat left center;
         background-size: 166px auto;
         // .Copyright{
         // }
         @include screen('mobile') {
             padding: 80px 0 .5em 20px;
-            background: url('../images/logo.png')no-repeat left top;
-            background-size: 166px auto;
+            background: url('../images/logo2.png')no-repeat left top;
+            background-size: 140px auto;
         }
 
     }
@@ -144,23 +144,27 @@ footer {
         display: inline-block;
         margin-right: 5px;
         width: 46%;
+        @include screen('mobile') {
+          display: block;
+          width: 100%;
+      }
 
-        em {
-            font-style: normal;
-            color: #000;
-            padding: 0 .5em;
-        }
+      em {
+        font-style: normal;
+        color: #000;
+        padding: 0 .5em;
     }
-    .update {
-        display: block;
-        margin-right: 5px;
-        em {
-            font-style: normal;
-            color: #000;
-            padding: 0 .5em;
-        }
+}
+.update {
+    display: block;
+    margin-right: 5px;
+    em {
+        font-style: normal;
+        color: #000;
+        padding: 0 .5em;
     }
-    .footer_icon {
+}
+.footer_icon {
         // float: right;
         // margin: -6.5em 2em 0 0;
         position: absolute;
