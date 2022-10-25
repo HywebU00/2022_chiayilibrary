@@ -148,3 +148,130 @@ div.function {
         }
     }
 }
+
+//
+.function2{
+    position: fixed;
+    right: 10px;
+    top:200px;
+    z-index: 999;
+    background: rgba(246, 246, 246, .8);
+    border-radius: 6px;
+    padding: .5em;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: .875em;
+
+        li{
+            margin: 1em auto;
+            a{
+                color:$color-word;
+                display: block;
+                padding: 50px .5em .5em .5em;
+                &:hover, &:focus{
+                    color:$primaryColor;
+                }
+            }
+
+        }
+        .fb{
+            a{
+                background: url('../images/fun2icon01.png')no-repeat center top;
+                background-size: 48px auto;
+                &:hover, &:focus{
+                    background: url('../images/fun2icon01ov.png')no-repeat center top;
+                    background-size: 48px auto; 
+                }
+            }
+        }
+        .se{
+            a{
+                background: url('../images/fun2icon02.png')no-repeat center top;
+                background-size: 48px auto;
+                &:hover, &:focus{
+                    background: url('../images/fun2icon02ov.png')no-repeat center top;
+                    background-size: 48px auto; 
+                }
+            }
+        }
+        .ca{
+            a{
+                background: url('../images/fun2icon03.png')no-repeat center top;
+                background-size: 48px auto;
+                &:hover, &:focus{
+                    background: url('../images/fun2icon03ov.png')no-repeat center top;
+                    background-size: 48px auto; 
+                }
+            }
+        }
+        .qa{
+            a{
+                background: url('../images/fun2icon04.png')no-repeat center top;
+                background-size: 48px auto;
+                &:hover, &:focus{
+                    background: url('../images/fun2icon04ov.png')no-repeat center top;
+                    background-size: 48px auto; 
+                }
+            }
+        }
+    }
+    @include screen('mobile') {
+        top:205px;
+        right: 5px;
+        width: 50px;
+        ul{
+            font-size: 0;
+            li{
+                a{
+                    padding: 1em .5em;
+                    height: 60px;
+                }
+            }
+            .fb{
+                a{
+                    background: url('../images/fun2icon01.png')no-repeat center center;
+                    background-size: 40px auto;
+                    &:hover, &:focus{
+                        background: url('../images/fun2icon01ov.png')no-repeat center center;
+                        background-size: 40px auto; 
+                    }
+                }
+            }
+            .se{
+                a{
+                    background: url('../images/fun2icon02.png')no-repeat center center;
+                    background-size: 40px auto;
+                    &:hover, &:focus{
+                        background: url('../images/fun2icon02ov.png')no-repeat center center;
+                        background-size: 40px auto; 
+                    }
+                }
+            }
+            .ca{
+                a{
+                    background: url('../images/fun2icon03.png')no-repeat center top;
+                    background-size: 40px auto;
+                    &:hover, &:focus{
+                        background: url('../images/fun2icon03ov.png')no-repeat center top;
+                        background-size: 40px auto; 
+                    }
+                }
+            }
+            .qa{
+                a{
+                    background: url('../images/fun2icon04.png')no-repeat center top;
+                    background-size: 40px auto;
+                    &:hover, &:focus{
+                        background: url('../images/fun2icon04ov.png')no-repeat center top;
+                        background-size: 40px auto; 
+                    }
+                }
+            }
+        }
+    }
+}
