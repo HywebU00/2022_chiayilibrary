@@ -6,6 +6,7 @@ footer {
     // background: #fff;
     .container {
         @include gutter;
+        z-index:1;
         // >div {
         //     padding-bottom: 1em;
         // }
@@ -168,6 +169,7 @@ footer {
         // float: right;
         // margin: -6.5em 2em 0 0;
         position: absolute;
+        z-index:1;
         top:8.5em;
         left:10px;
         min-width: 200px;
@@ -185,7 +187,7 @@ footer {
             display: inline-block;
             white-space: nowrap;
             vertical-align: top;
-            position:relative;
+            // position:relative;
             &:focus {
                 &:after {
                     content: "";
