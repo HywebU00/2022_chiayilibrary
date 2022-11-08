@@ -6,7 +6,7 @@ $(function() {
       dots: true,
       arrows: true,
       infinite: true,
-      speed: 500,
+      speed: 5000,
       autoplay: true,
       fade: true,
       lazyLoaded: true,
@@ -208,8 +208,33 @@ setTimeout(function () {
 
 });
 
+//mpSlider5
+var $carousel = $(".mpSlider5").slick({
+  mobileFirst: true,
+  dots: true,
+  arrow: true,
+  infinite: true,
+  speed:0,
+  autoplaySpeed: 5000, //配合點的時間
+  autoplay: true,
+  fade: true,
+  lazyLoaded: true,
+  lazyLoad: "ondemand",
+  ease: "ease",
+  pauseOnHover: false
+});
+/* The first slide will not get the animation,
+therefore I add and remove a class that will trigger the css animation */
+$carousel.find(".slick-current").addClass("start");
+/* I use a set-timeoutfunction to hinder optimization
+of adding and removing classes */
+setTimeout(function () {
+  $carousel.find(".start").removeClass("start");
+}, 0);
 
-//test
+
+
+//mpSlider3
 $('.mpSlider3 .slick')
 .on('init', () => {
     $('.slick-slide[data-slick-index="-2"]').addClass('lt2');

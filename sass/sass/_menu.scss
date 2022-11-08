@@ -9,7 +9,7 @@
     >ul {
         text-align: right;
         margin: 0;
-        padding: 0 2.6em 0 0;
+        padding: 0;
         font-size: 1.063em;
         @include screen('tablet') {
            padding: .5em 2.6em 0 0;

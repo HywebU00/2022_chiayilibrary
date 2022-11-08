@@ -27,7 +27,7 @@
     <!-- wrapper Start -->
     <div class="wrapper">
         <!-- header Start -->
-        <header class="header full">
+        <header class="header">
             <div class="container">
                 <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
                 <!-- navigation Start -->
@@ -192,19 +192,32 @@
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="swiperblock full">
+        <section class="swiperblock">
             <div class="container">
-                <!-- mpSlider3 star -->
-                <div class="mpSlider3">
-                    <div class="slick">
-                        <div><a href="#"><span class="img-container"><img src="images/slider_img01.jpg" alt="圖片說明"></span></a></div>
-                        <div><a href="#"><span class="img-container"><img src="images/slider_img02.jpg" alt="圖片說明"></span></a></div>
-                        <div><a href="#"><span class="img-container"><img src="images/slider_img03.jpg" alt="圖片說明"></span></a></div>
-                        <div><a href="#"><span class="img-container"><img src="images/slider_img04.jpg" alt="圖片說明"></span></a></div>
+                <!-- mpSlide start-->
+                <section class="mpSlider">
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <img src="images/mpbanner.jpg" alt="">
+                        </a>
                     </div>
-                </div>
-                <!-- mpSlider3 end -->
-                <!-- </div> -->
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <img src="images/mpbanner2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <img src="images/mpbanner3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <img src="images/mpbanner4.jpg" alt="">
+                        </a>
+                    </div>
+                </section>
+                <!-- mpSlide end-->
             </div>
         </section>
 
@@ -222,371 +235,325 @@
       <!--  兩欄樣式 -->
       <section class="col-8-4">
         <div class="container">
-            <div class="col news wow fadeInLeft" data-wow-duration=".8s" data-wow-delay="0s">
-                <h2>訊息公告</h2>
-                <form action="" class="form_inline">
-                    <div class="form_grp select_library">
-                        <label for="selectSample">選擇館別：</label>
-                        <select name="" id="selectSample">
-                            <option value="">全部</option>
-                            <option value="">文化局圖書館</option>
-                            <option value="">世賢圖書館</option>
-                            <option value="">黃賓圖書館</option>
-                        </select>
-                    </div>
-                </form>
-                <div class="tabSet">
-                    <section class="tabs example-1">
-                        <h3 class="tabItem active"><a href="#">全部</a></h3>
-                        <!--選到的頁籤項目-->
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-24</time><a href="#">母親節活動報名開始!!</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-08</time><a href="#">圖書館休館公告</a></li>
-                                <li><span class="township_tag">黃賓圖書館</span><time>2022-04-04</time><a href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-02</time><a href="#">兒童節好書分享日</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多訊息公告</a></div>
+            <!-- <div class="col news wow fadeInLeft" data-wow-duration=".8s" data-wow-delay="0s"> -->
+                <div class="col news">
+                    <h2>訊息公告</h2>
+                    <form action="" class="form_inline">
+                        <div class="form_grp select_library">
+                            <label for="selectSample">選擇館別：</label>
+                            <select name="" id="selectSample">
+                                <option value="">全部</option>
+                                <option value="">文化局圖書館</option>
+                                <option value="">世賢圖書館</option>
+                                <option value="">黃賓圖書館</option>
+                            </select>
                         </div>
-                        <h3 class="tabItem"><a href="#">重要公告</a></h3>
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多重要公告</a></div>
-                        </div>
-                        <h3 class="tabItem"><a href="#">活動資訊</a></h3>
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多活動資訊</a></div>
-                        </div>
-                        <h3 class="tabItem"><a href="#">新聞稿</a></h3>
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多新聞稿</a></div>
-                        </div>
-                        <h3 class="tabItem"><a href="#">轉知訊息</a></h3>
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多轉知訊息</a></div>
-                        </div>
-                        <h3 class="tabItem"><a href="#">統計報表</a></h3>
-                        <div class="tabContent">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多統計報表</a></div>
-                        </div>
+                    </form>
+                    <div class="tabSet">
+                        <section class="tabs example-1">
+                            <h3 class="tabItem active"><a href="#">全部</a></h3>
+                            <!--選到的頁籤項目-->
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-24</time><a href="#">母親節活動報名開始!!</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-08</time><a href="#">圖書館休館公告</a></li>
+                                    <li><span class="township_tag">黃賓圖書館</span><time>2022-04-04</time><a href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-02</time><a href="#">兒童節好書分享日</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多訊息公告</a></div>
+                            </div>
+                            <h3 class="tabItem"><a href="#">重要公告</a></h3>
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多重要公告</a></div>
+                            </div>
+                            <h3 class="tabItem"><a href="#">活動資訊</a></h3>
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多活動資訊</a></div>
+                            </div>
+                            <h3 class="tabItem"><a href="#">新聞稿</a></h3>
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多新聞稿</a></div>
+                            </div>
+                            <h3 class="tabItem"><a href="#">轉知訊息</a></h3>
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多轉知訊息</a></div>
+                            </div>
+                            <h3 class="tabItem"><a href="#">統計報表</a></h3>
+                            <div class="tabContent">
+                                <ul>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">2第一則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第二則消息</a></li>
+                                    <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">第三則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第四則消息</a></li>
+                                    <li><span class="township_tag">世賢圖書館</span><time>2022-04-10</time><a href="#">第五則消息</a></li>
+                                </ul>
+                                <div class="more"><a href="#">更多統計報表</a></div>
+                            </div>
 
-                    </section>
-                </div>
-            </div>
-            <div class="col reader_service wow fadeInRight" data-wow-duration=".8s" data-wow-delay="0">
-                <h2>讀者服務</h2>
-                <ul>
-                    <li class="service_search"><a href="#">館藏查詢</a></li>
-                    <li class="service_rule"><a href="#">讀者意見</a></li>
-                    <li class="service_fb"><a href="#">FB粉絲團</a></li>
-                    <li class="service_qa"><a href="#">常見問題</a></li>
-                    <li class="service_library_card"><a href="#">網路辦證</a></li>
-                    <li class="service_apply"><a href="#">線上申辦</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--  兩欄樣式 8-4 -->
-    <section class="col-12">
-        <div class="container">
-            <div class="col recent_activities wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-                <h2>近期活動</h2>
-                <form action="" class="form_inline">
-                    <div class="form_grp select_library">
-                        <label for="selectSample">選擇館別：</label>
-                        <select name="" id="selectSample">
-                            <option value="">全部</option>
-                            <option value="">文化局圖書館</option>
-                            <option value="">世賢圖書館</option>
-                            <option value="">黃賓圖書館</option>
-                        </select>
-                    </div>
-                </form>
-                <div class="col-4-8">
-                    <div class="col">
-                        <!-- 圖片輪播 start-->
-                        <div class="activity_slider">
-                            <div class="img-container">
-                                <a href="#" data-caption="第1張圖說">
-                                    <img src="images/activity_img01.jpg" class="cover lazy">
-                                    <span class="caption">
-                                        <div class="unit">文化局圖書館</div>
-                                        <h3>2021與作家有約- 中央噴水池文學講座</h3>
-                                        <div class="date">2022/08/08</div>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="img-container">
-                                <a href="#" data-caption="第2張圖說">
-                                    <img src="images/activity_img02.jpg" class="cover lazy">
-                                    <span class="caption">
-                                        <div class="unit">文化局圖書館</div>
-                                        <h3>2021與作家有約- 中央噴水池文學講座</h3>
-                                        <div class="date">2022/08/08</div>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="img-container">
-                                <a href="#" data-caption="第3張圖說">
-                                    <img src="images/activity_img03.jpg" class="cover lazy">
-                                    <span class="caption">
-                                        <div class="unit">文化局圖書館</div>
-                                        <h3>2021與作家有約- 中央噴水池文學講座</h3>
-                                        <div class="date">2022/08/08</div>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="img-container">
-                                <a href="#" data-caption="第4張圖說">
-                                    <img src="images/activity_img04.jpg" class="cover lazy">
-                                    <span class="caption">
-                                        <div class="unit">文化局圖書館</div>
-                                        <h3>2021與作家有約- 中央噴水池文學講座</h3>
-                                        <div class="date">2022/08/08</div>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="img-container">
-                                <a href="#" data-caption="第5張圖說">
-                                    <img src="images/activity_img05.jpg" class="cover lazy">
-                                    <span class="caption">
-                                        <div class="unit">文化局圖書館</div>
-                                        <h3>2021與作家有約- 中央噴水池文學講座</h3>
-                                        <div class="date">2022/08/08</div>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- 圖片輪播 end-->
-                    </div>
-                    <div class="col">
-                        <!-- activities_content star -->
-                        <div class="activities_content">
-                            <ul>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-24</time><a href="#">母親節活動報名開始!!</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換</a></li>
-                                <li><span class="township_tag">世賢圖書館</span><time>2022-04-08</time><a href="#">圖書館休館公告</a></li>
-                                <li><span class="township_tag">黃賓圖書館</span><time>2022-04-04</time><a href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
-                                <li><span class="township_tag">文化局圖書館</span><time>2022-04-02</time><a href="#">兒童節好書分享日</a></li>
-                            </ul>
-                            <div class="more"><a href="#">更多近期活動</a></div>
-                        </div>
-                        <!-- activities_content end -->
+                        </section>
                     </div>
                 </div>
-
-
-            </div>
-        </div>
-    </section>
-    <section class="bg-1">
-        <div class="container">
-            <div class="col book_display wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
-                <h2>新書展示</h2>
-                <div class="bookSlider">
-                    <div class="book_wrap">
-                        <a href="#">
-                            <div class="img-container">
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
-                                    <source media="(min-width: 992px)" srcset="images/book1.png"></source>
-                                    <source media="(min-width: 576px)" srcset="images/book1.png"></source>
-                                    <source medsrcset="images/book1.png">
-                                        <img data-original="images/book1.png" alt="book1" class="lazy contain"></source>
-                                        <noscript><img src="images/book1.png"></noscript>
-                                    </picture>
-                                </div>
-                                <p class="book_name">巴菲特財報學：用價值投資4大原則選出好股票</p>
-                            </a>
-                        </div>
-                        <div class="book_wrap">
-                            <a href="#" title="" class="book_link">
-                                <div class="img-container">
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="images/book2.png"></source>
-                                        <source media="(min-width: 992px)" srcset="images/book2.png"></source>
-                                        <source media="(min-width: 576px)" srcset="images/book2.png"></source>
-                                        <source medsrcset="images/book2.png">
-                                            <img data-original="images/book2.png" class="lazy contain"></source>
-                                            <noscript><img src="images/book2.png"></noscript>
-                                        </picture>
+                <!-- <div class="col reader_service wow fadeInRight" data-wow-duration=".8s" data-wow-delay="0"> -->
+                    <div class="col reader_service">
+                        <h2>讀者服務</h2>
+                        <ul>
+                            <li class="service_search"><a href="#">館藏查詢</a></li>
+                            <li class="service_rule"><a href="#">讀者意見</a></li>
+                            <li class="service_fb"><a href="#">FB粉絲團</a></li>
+                            <li class="service_qa"><a href="#">常見問題</a></li>
+                            <li class="service_library_card"><a href="#">網路辦證</a></li>
+                            <li class="service_apply"><a href="#">線上申辦</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--  兩欄樣式 8-4 -->
+            <section class="col-12">
+                <div class="container">
+                    <div class="col recent_activities wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                        <h2>近期活動</h2>
+                        <form action="" class="form_inline">
+                            <div class="form_grp select_library">
+                                <label for="selectSample">選擇館別：</label>
+                                <select name="" id="selectSample">
+                                    <option value="">全部</option>
+                                    <option value="">文化局圖書館</option>
+                                    <option value="">世賢圖書館</option>
+                                    <option value="">黃賓圖書館</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="col-4-8">
+                            <div class="col">
+                                <!-- 圖片輪播 start-->
+                                <div class="activity_slider">
+                                    <div class="img-container">
+                                        <a href="#" data-caption="第1張圖說">
+                                            <img src="images/activity_img01.jpg" class="cover lazy">
+                                            <span class="caption">
+                                                <div class="unit">文化局圖書館</div>
+                                                <h3>2021與作家有約- 中央噴水池文學講座</h3>
+                                                <div class="date">2022/08/08</div>
+                                            </span>
+                                        </a>
                                     </div>
-                                    <p class="book_name">親愛的艾倫：就算妳與眾不同，我只會愛妳更多</p>
-                                </a>
+                                    <div class="img-container">
+                                        <a href="#" data-caption="第2張圖說">
+                                            <img src="images/activity_img02.jpg" class="cover lazy">
+                                            <span class="caption">
+                                                <div class="unit">文化局圖書館</div>
+                                                <h3>2021與作家有約- 中央噴水池文學講座</h3>
+                                                <div class="date">2022/08/08</div>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="img-container">
+                                        <a href="#" data-caption="第3張圖說">
+                                            <img src="images/activity_img03.jpg" class="cover lazy">
+                                            <span class="caption">
+                                                <div class="unit">文化局圖書館</div>
+                                                <h3>2021與作家有約- 中央噴水池文學講座</h3>
+                                                <div class="date">2022/08/08</div>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="img-container">
+                                        <a href="#" data-caption="第4張圖說">
+                                            <img src="images/activity_img04.jpg" class="cover lazy">
+                                            <span class="caption">
+                                                <div class="unit">文化局圖書館</div>
+                                                <h3>2021與作家有約- 中央噴水池文學講座</h3>
+                                                <div class="date">2022/08/08</div>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="img-container">
+                                        <a href="#" data-caption="第5張圖說">
+                                            <img src="images/activity_img05.jpg" class="cover lazy">
+                                            <span class="caption">
+                                                <div class="unit">文化局圖書館</div>
+                                                <h3>2021與作家有約- 中央噴水池文學講座</h3>
+                                                <div class="date">2022/08/08</div>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 圖片輪播 end-->
                             </div>
+                            <div class="col">
+                                <!-- activities_content star -->
+                                <div class="activities_content">
+                                    <ul>
+                                        <li><span class="township_tag">文化局圖書館</span><time>2022-04-24</time><a href="#">母親節活動報名開始!!</a></li>
+                                        <li><span class="township_tag">文化局圖書館</span><time>2022-04-10</time><a href="#">圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換圖書館開放二手書交換</a></li>
+                                        <li><span class="township_tag">世賢圖書館</span><time>2022-04-08</time><a href="#">圖書館休館公告</a></li>
+                                        <li><span class="township_tag">黃賓圖書館</span><time>2022-04-04</time><a href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
+                                        <li><span class="township_tag">文化局圖書館</span><time>2022-04-02</time><a href="#">兒童節好書分享日</a></li>
+                                    </ul>
+                                    <div class="more"><a href="#">更多近期活動</a></div>
+                                </div>
+                                <!-- activities_content end -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="bg-1">
+                <div class="container">
+                    <div class="col book_display wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                        <h2>新書展示</h2>
+                        <div class="bookSlider">
                             <div class="book_wrap">
                                 <a href="#">
                                     <div class="img-container">
                                         <picture>
-                                            <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
-                                            <source media="(min-width: 992px)" srcset="images/book3.png"></source>
-                                            <source media="(min-width: 576px)" srcset="images/book3.png"></source>
-                                            <source medsrcset="images/book3.png">
-                                                <img data-original="images/book3.png" class="lazy contain"></source>
-                                                <noscript><img src="images/book3.png"></noscript>
+                                            <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
+                                            <source media="(min-width: 992px)" srcset="images/book1.png"></source>
+                                            <source media="(min-width: 576px)" srcset="images/book1.png"></source>
+                                            <source medsrcset="images/book1.png">
+                                                <img data-original="images/book1.png" alt="book1" class="lazy contain"></source>
+                                                <noscript><img src="images/book1.png"></noscript>
                                             </picture>
                                         </div>
-                                        <p class="book_name">科學不思議3：好想去月球</p>
+                                        <p class="book_name">巴菲特財報學：用價值投資4大原則選出好股票</p>
                                     </a>
                                 </div>
                                 <div class="book_wrap">
-                                    <a href="#">
+                                    <a href="#" title="" class="book_link">
                                         <div class="img-container">
                                             <picture>
-                                                <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
-                                                <source media="(min-width: 992px)" srcset="images/book4.png"></source>
-                                                <source media="(min-width: 576px)" srcset="images/book4.png"></source>
-                                                <source medsrcset="images/book4.png"></source>
-                                                <img data-original="images/book4.png" class="lazy contain">
-                                                <noscript><img src="images/book4.png"></noscript>
-                                            </picture>
+                                                <source media="(min-width: 1200px)" srcset="images/book2.png"></source>
+                                                <source media="(min-width: 992px)" srcset="images/book2.png"></source>
+                                                <source media="(min-width: 576px)" srcset="images/book2.png"></source>
+                                                <source medsrcset="images/book2.png">
+                                                    <img data-original="images/book2.png" class="lazy contain"></source>
+                                                    <noscript><img src="images/book2.png"></noscript>
+                                                </picture>
+                                            </div>
+                                            <p class="book_name">親愛的艾倫：就算妳與眾不同，我只會愛妳更多</p>
+                                        </a>
+                                    </div>
+                                    <div class="book_wrap">
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
+                                                    <source media="(min-width: 992px)" srcset="images/book3.png"></source>
+                                                    <source media="(min-width: 576px)" srcset="images/book3.png"></source>
+                                                    <source medsrcset="images/book3.png">
+                                                        <img data-original="images/book3.png" class="lazy contain"></source>
+                                                        <noscript><img src="images/book3.png"></noscript>
+                                                    </picture>
+                                                </div>
+                                                <p class="book_name">科學不思議3：好想去月球</p>
+                                            </a>
                                         </div>
-                                        <p class="book_name">我也不想一直當好人：
-                                        把痛苦、走偏的關係</p>
-                                    </a>
-                                </div>
-                                <div class="book_wrap">
-                                    <a href="#">
-                                        <div class="img-container">
-                                            <picture>
-                                                <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
-                                                <source media="(min-width: 992px)" srcset="images/book5.png"></source>
-                                                <source media="(min-width: 576px)" srcset="images/book5.png"></source>
-                                                <source medsrcset="images/book5.png"></source>
-                                                <img data-original="images/book5.png" class="lazy contain">
-                                                <noscript><img src="images/book5.png"></noscript>
-                                            </picture>
+                                        <div class="book_wrap">
+                                            <a href="#">
+                                                <div class="img-container">
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
+                                                        <source media="(min-width: 992px)" srcset="images/book4.png"></source>
+                                                        <source media="(min-width: 576px)" srcset="images/book4.png"></source>
+                                                        <source medsrcset="images/book4.png"></source>
+                                                        <img data-original="images/book4.png" class="lazy contain">
+                                                        <noscript><img src="images/book4.png"></noscript>
+                                                    </picture>
+                                                </div>
+                                                <p class="book_name">我也不想一直當好人：
+                                                把痛苦、走偏的關係</p>
+                                            </a>
                                         </div>
-                                        <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
-                                    </a>
-                                </div>
-                                <div class="book_wrap">
-                                    <a href="#">
-                                        <div class="img-container">
-                                            <picture>
-                                                <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
-                                                <source media="(min-width: 992px)" srcset="images/book6.png"></source>
-                                                <source media="(min-width: 576px)" srcset="images/book6.png"></source>
-                                                <source medsrcset="images/book6.png"></source>
-                                                <img data-original="images/book6.png" class="lazy contain">
-                                                <noscript><img src="images/book6.png"></noscript>
-                                            </picture>
+                                        <div class="book_wrap">
+                                            <a href="#">
+                                                <div class="img-container">
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
+                                                        <source media="(min-width: 992px)" srcset="images/book5.png"></source>
+                                                        <source media="(min-width: 576px)" srcset="images/book5.png"></source>
+                                                        <source medsrcset="images/book5.png"></source>
+                                                        <img data-original="images/book5.png" class="lazy contain">
+                                                        <noscript><img src="images/book5.png"></noscript>
+                                                    </picture>
+                                                </div>
+                                                <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
+                                            </a>
                                         </div>
-                                        <p class="book_name">10層樓的樟樹公寓</p>
-                                    </a>
+                                        <div class="book_wrap">
+                                            <a href="#">
+                                                <div class="img-container">
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
+                                                        <source media="(min-width: 992px)" srcset="images/book6.png"></source>
+                                                        <source media="(min-width: 576px)" srcset="images/book6.png"></source>
+                                                        <source medsrcset="images/book6.png"></source>
+                                                        <img data-original="images/book6.png" class="lazy contain">
+                                                        <noscript><img src="images/book6.png"></noscript>
+                                                    </picture>
+                                                </div>
+                                                <p class="book_name">10層樓的樟樹公寓</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--bookslider End-->
+                                    <div class="more"><a href="#">更多新書</a></div>
                                 </div>
                             </div>
-                            <!--bookslider End-->
-                            <div class="more"><a href="#">更多新書</a></div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="container">
-                        <div class="col book_display wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s">
-                            <h2>熱門排行榜</h2>
-                            <div class="tabSet">
-                                <section class="tabs example-1">
-                                    <h3 class="tabItem active"><a href="#">全部</a></h3>
-                                    <!--選到的頁籤項目-->
-                                    <div class="tabContent">
-                                        <div class="bookSlider">
-                                            <div class="book_wrap">
-                                                <a href="#">
-                                                    <div class="img-container">
-                                                        <picture>
-                                                            <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
-                                                            <source media="(min-width: 992px)" srcset="images/book5.png"></source>
-                                                            <source media="(min-width: 576px)" srcset="images/book5.png"></source>
-                                                            <source medsrcset="images/book5.png"></source>
-                                                            <img data-original="images/book5.png" class="lazy contain">
-                                                            <noscript><img src="images/book5.png"></noscript>
-                                                        </picture>
-                                                    </div>
-                                                    <p class="book_name">新小牛頓</p>
-                                                    <div class="bout">借閱148次</div>
-                                                </a>
-                                            </div>
-                                            <div class="book_wrap">
-                                                <a href="#">
-                                                    <div class="img-container">
-                                                        <picture>
-                                                            <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
-                                                            <source media="(min-width: 992px)" srcset="images/book6.png"></source>
-                                                            <source media="(min-width: 576px)" srcset="images/book6.png"></source>
-                                                            <source medsrcset="images/book6.png">
-                                                                <img data-original="images/book6.png" class="lazy contain"></source>
-                                                                <noscript><img src="images/book6.png"></noscript>
-                                                            </picture>
-                                                        </div>
-                                                        <p class="book_name">未來少年月刊</p>
-                                                        <div class="bout">借閱148次</div>
-                                                    </a>
-                                                </div>
-                                                <div class="book_wrap">
-                                                    <a href="#">
-                                                        <div class="img-container">
-                                                            <picture>
-                                                                <source media="(min-width: 1200px)" srcset="images/book7.png"></source>
-                                                                <source media="(min-width: 992px)" srcset="images/book7.png"></source>
-                                                                <source media="(min-width: 576px)" srcset="images/book7.png"></source>
-                                                                <source medsrcset="images/book7.png"></source>
-                                                                <img data-original="images/book7.png" class="lazy contain">
-                                                                <noscript><img src="images/book7.png"></noscript>
-                                                            </picture>
-                                                        </div>
-                                                        <p class="book_name">地球公民</p>
-                                                        <div class="bout">借閱148次</div>
-                                                    </a>
-                                                </div>
-                                                <div class="book_wrap">
-                                                    <a href="#">
-                                                        <div class="img-container">
-                                                            <picture>
-                                                                <source media="(min-width: 1200px)" srcset="images/book8.png"></source>
-                                                                <source media="(min-width: 992px)" srcset="images/book8.png"></source>
-                                                                <source media="(min-width: 576px)" srcset="images/book8.png"></source>
-                                                                <source medsrcset="images/book8.png">
-                                                                    <img data-original="images/book8.png" class="lazy contain"></source>
-                                                                    <noscript><img src="images/book8.png"></noscript>
+                        </section>
+                        <section>
+                            <div class="container">
+                                <div class="col book_display wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s">
+                                    <h2>熱門排行榜</h2>
+                                    <div class="tabSet">
+                                        <section class="tabs example-1">
+                                            <h3 class="tabItem active"><a href="#">全部</a></h3>
+                                            <!--選到的頁籤項目-->
+                                            <div class="tabContent">
+                                                <div class="bookSlider">
+                                                    <div class="book_wrap">
+                                                        <a href="#">
+                                                            <div class="img-container">
+                                                                <picture>
+                                                                    <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
+                                                                    <source media="(min-width: 992px)" srcset="images/book5.png"></source>
+                                                                    <source media="(min-width: 576px)" srcset="images/book5.png"></source>
+                                                                    <source medsrcset="images/book5.png"></source>
+                                                                    <img data-original="images/book5.png" class="lazy contain">
+                                                                    <noscript><img src="images/book5.png"></noscript>
                                                                 </picture>
                                                             </div>
-                                                            <p class="book_name">地球公民</p>
+                                                            <p class="book_name">新小牛頓</p>
                                                             <div class="bout">借閱148次</div>
                                                         </a>
                                                     </div>
@@ -635,30 +602,6 @@
                                                                         </picture>
                                                                     </div>
                                                                     <p class="book_name">地球公民</p>
-                                                                    <div class="bout">借閱148次</div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--bookslider End-->
-                                                        <div class="more"><a href="#">更多借閱</a></div>
-                                                    </div>
-                                                    <!--tabContent END-->
-                                                    <h3 class="tabItem"><a href="#">點閱</a></h3>
-                                                    <div class="tabContent">
-                                                        <div class="bookSlider">
-                                                            <div class="book_wrap">
-                                                                <a href="#">
-                                                                    <div class="img-container">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
-                                                                            <source media="(min-width: 992px)" srcset="images/book5.png"></source>
-                                                                            <source media="(min-width: 576px)" srcset="images/book5.png"></source>
-                                                                            <source medsrcset="images/book5.png"></source>
-                                                                            <img data-original="images/book5.png" class="lazy contain">
-                                                                            <noscript><img src="images/book5.png"></noscript>
-                                                                        </picture>
-                                                                    </div>
-                                                                    <p class="book_name">新小牛頓2</p>
                                                                     <div class="bout">借閱148次</div>
                                                                 </a>
                                                             </div>
@@ -714,7 +657,8 @@
                                                                 <!--bookslider End-->
                                                                 <div class="more"><a href="#">更多借閱</a></div>
                                                             </div>
-                                                            <h3 class="tabItem"><a href="#">預約</a></h3>
+                                                            <!--tabContent END-->
+                                                            <h3 class="tabItem"><a href="#">點閱</a></h3>
                                                             <div class="tabContent">
                                                                 <div class="bookSlider">
                                                                     <div class="book_wrap">
@@ -729,7 +673,7 @@
                                                                                     <noscript><img src="images/book5.png"></noscript>
                                                                                 </picture>
                                                                             </div>
-                                                                            <p class="book_name">新小牛頓3</p>
+                                                                            <p class="book_name">新小牛頓2</p>
                                                                             <div class="bout">借閱148次</div>
                                                                         </a>
                                                                     </div>
@@ -785,69 +729,9 @@
                                                                         <!--bookslider End-->
                                                                         <div class="more"><a href="#">更多借閱</a></div>
                                                                     </div>
-                                                                    <h3 class="tabItem"><a href="#">評論</a></h3>
+                                                                    <h3 class="tabItem"><a href="#">預約</a></h3>
                                                                     <div class="tabContent">
                                                                         <div class="bookSlider">
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book1.png"></source>
-                                                                                            <source medsrcset="images/book1.png"></source>
-                                                                                            <img data-original="images/book1.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book1.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">4</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book1.png"></source>
-                                                                                            <source medsrcset="images/book1.png"></source>
-                                                                                            <img data-original="images/book1.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book1.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">神來的時候</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book3.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book3.png"></source>
-                                                                                            <source medsrcset="images/book3.png"></source>
-                                                                                            <img data-original="images/book3.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book3.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book4.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book4.png"></source>
-                                                                                            <source medsrcset="images/book4.png"></source>
-                                                                                            <img data-original="images/book4.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book4.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">高手的養成--股市新手必須知道的3個祕密</p>
-                                                                                </a>
-                                                                            </div>
                                                                             <div class="book_wrap">
                                                                                 <a href="#">
                                                                                     <div class="img-container">
@@ -860,7 +744,8 @@
                                                                                             <noscript><img src="images/book5.png"></noscript>
                                                                                         </picture>
                                                                                     </div>
-                                                                                    <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
+                                                                                    <p class="book_name">新小牛頓3</p>
+                                                                                    <div class="bout">借閱148次</div>
                                                                                 </a>
                                                                             </div>
                                                                             <div class="book_wrap">
@@ -870,430 +755,560 @@
                                                                                             <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
                                                                                             <source media="(min-width: 992px)" srcset="images/book6.png"></source>
                                                                                             <source media="(min-width: 576px)" srcset="images/book6.png"></source>
-                                                                                            <source medsrcset="images/book6.png"></source>
-                                                                                            <img data-original="images/book6.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book6.png"></noscript>
-                                                                                        </picture>
+                                                                                            <source medsrcset="images/book6.png">
+                                                                                                <img data-original="images/book6.png" class="lazy contain"></source>
+                                                                                                <noscript><img src="images/book6.png"></noscript>
+                                                                                            </picture>
+                                                                                        </div>
+                                                                                        <p class="book_name">未來少年月刊</p>
+                                                                                        <div class="bout">借閱148次</div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="book_wrap">
+                                                                                    <a href="#">
+                                                                                        <div class="img-container">
+                                                                                            <picture>
+                                                                                                <source media="(min-width: 1200px)" srcset="images/book7.png"></source>
+                                                                                                <source media="(min-width: 992px)" srcset="images/book7.png"></source>
+                                                                                                <source media="(min-width: 576px)" srcset="images/book7.png"></source>
+                                                                                                <source medsrcset="images/book7.png"></source>
+                                                                                                <img data-original="images/book7.png" class="lazy contain">
+                                                                                                <noscript><img src="images/book7.png"></noscript>
+                                                                                            </picture>
+                                                                                        </div>
+                                                                                        <p class="book_name">地球公民</p>
+                                                                                        <div class="bout">借閱148次</div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="book_wrap">
+                                                                                    <a href="#">
+                                                                                        <div class="img-container">
+                                                                                            <picture>
+                                                                                                <source media="(min-width: 1200px)" srcset="images/book8.png"></source>
+                                                                                                <source media="(min-width: 992px)" srcset="images/book8.png"></source>
+                                                                                                <source media="(min-width: 576px)" srcset="images/book8.png"></source>
+                                                                                                <source medsrcset="images/book8.png">
+                                                                                                    <img data-original="images/book8.png" class="lazy contain"></source>
+                                                                                                    <noscript><img src="images/book8.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">地球公民</p>
+                                                                                            <div class="bout">借閱148次</div>
+                                                                                        </a>
                                                                                     </div>
-                                                                                    <p class="book_name">10層樓的樟樹公寓</p>
-                                                                                </a>
+                                                                                </div>
+                                                                                <!--bookslider End-->
+                                                                                <div class="more"><a href="#">更多借閱</a></div>
                                                                             </div>
-                                                                        </div>
-                                                                        <!--bookslider End-->
-                                                                        <div class="more"><a href="#">更多借閱</a></div>
+                                                                            <h3 class="tabItem"><a href="#">評論</a></h3>
+                                                                            <div class="tabContent">
+                                                                                <div class="bookSlider">
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book1.png"></source>
+                                                                                                    <source medsrcset="images/book1.png"></source>
+                                                                                                    <img data-original="images/book1.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book1.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">4</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book1.png"></source>
+                                                                                                    <source medsrcset="images/book1.png"></source>
+                                                                                                    <img data-original="images/book1.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book1.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">神來的時候</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book3.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book3.png"></source>
+                                                                                                    <source medsrcset="images/book3.png"></source>
+                                                                                                    <img data-original="images/book3.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book3.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book4.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book4.png"></source>
+                                                                                                    <source medsrcset="images/book4.png"></source>
+                                                                                                    <img data-original="images/book4.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book4.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">高手的養成--股市新手必須知道的3個祕密</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book5.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book5.png"></source>
+                                                                                                    <source medsrcset="images/book5.png"></source>
+                                                                                                    <img data-original="images/book5.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book5.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book6.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book6.png"></source>
+                                                                                                    <source medsrcset="images/book6.png"></source>
+                                                                                                    <img data-original="images/book6.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book6.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">10層樓的樟樹公寓</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--bookslider End-->
+                                                                                <div class="more"><a href="#">更多借閱</a></div>
+                                                                            </div>
+                                                                            <h3 class="tabItem"><a href="#">評分</a></h3>
+                                                                            <div class="tabContent">
+                                                                                <div class="bookSlider">
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book1.png"></source>
+                                                                                                    <source medsrcset="images/book1.png"></source>
+                                                                                                    <img data-original="images/book1.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book1.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">5</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book1.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book1.png"></source>
+                                                                                                    <source medsrcset="images/book1.png"></source>
+                                                                                                    <img data-original="images/book1.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book1.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">神來的時候</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book3.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book3.png"></source>
+                                                                                                    <source medsrcset="images/book3.png"></source>
+                                                                                                    <img data-original="images/book3.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book3.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book4.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book4.png"></source>
+                                                                                                    <source medsrcset="images/book4.png"></source>
+                                                                                                    <img data-original="images/book4.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book4.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">高手的養成--股市新手必須知道的3個祕密</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book5.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book5.png"></source>
+                                                                                                    <source medsrcset="images/book5.png"></source>
+                                                                                                    <img data-original="images/book5.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book5.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="book_wrap">
+                                                                                        <a href="#">
+                                                                                            <div class="img-container">
+                                                                                                <picture>
+                                                                                                    <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
+                                                                                                    <source media="(min-width: 992px)" srcset="images/book6.png"></source>
+                                                                                                    <source media="(min-width: 576px)" srcset="images/book6.png"></source>
+                                                                                                    <source medsrcset="images/book6.png"></source>
+                                                                                                    <img data-original="images/book6.png" class="lazy contain">
+                                                                                                    <noscript><img src="images/book6.png"></noscript>
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <p class="book_name">10層樓的樟樹公寓</p>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--bookslider End-->
+                                                                                <div class="more"><a href="#">更多借閱</a></div>
+                                                                            </div>
+                                                                        </section>
                                                                     </div>
-                                                                    <h3 class="tabItem"><a href="#">評分</a></h3>
-                                                                    <div class="tabContent">
-                                                                        <div class="bookSlider">
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book1.png"></source>
-                                                                                            <source medsrcset="images/book1.png"></source>
-                                                                                            <img data-original="images/book1.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book1.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">5</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book1.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book1.png"></source>
-                                                                                            <source medsrcset="images/book1.png"></source>
-                                                                                            <img data-original="images/book1.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book1.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">神來的時候</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book3.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book3.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book3.png"></source>
-                                                                                            <source medsrcset="images/book3.png"></source>
-                                                                                            <img data-original="images/book3.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book3.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book4.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book4.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book4.png"></source>
-                                                                                            <source medsrcset="images/book4.png"></source>
-                                                                                            <img data-original="images/book4.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book4.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">高手的養成--股市新手必須知道的3個祕密</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book5.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book5.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book5.png"></source>
-                                                                                            <source medsrcset="images/book5.png"></source>
-                                                                                            <img data-original="images/book5.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book5.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</p>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="book_wrap">
-                                                                                <a href="#">
-                                                                                    <div class="img-container">
-                                                                                        <picture>
-                                                                                            <source media="(min-width: 1200px)" srcset="images/book6.png"></source>
-                                                                                            <source media="(min-width: 992px)" srcset="images/book6.png"></source>
-                                                                                            <source media="(min-width: 576px)" srcset="images/book6.png"></source>
-                                                                                            <source medsrcset="images/book6.png"></source>
-                                                                                            <img data-original="images/book6.png" class="lazy contain">
-                                                                                            <noscript><img src="images/book6.png"></noscript>
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                    <p class="book_name">10層樓的樟樹公寓</p>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--bookslider End-->
-                                                                        <div class="more"><a href="#">更多借閱</a></div>
-                                                                    </div>
-                                                                </section>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                                <section class="col-12 library_info">
-                                                    <div class="container">
-                                                        <h2  class="wow fadeIn" data-wow-duration=".8s">各館資訊</h2>
-
-                                                        <div class="col-6-3-3 info_content">
+                                                        </section>
+                                                        <section class="col-12 library_info">
                                                             <div class="container">
-                                                                <div class="col">
-                                                                    <div class="info_list_wrap  wow fadeInLeft" data-wow-duration=".8s" data-wow-delay=".5s">
-                                                                        <form action="">
-                                                                            <div class="library_select">
-                                                                                <!-- PC版選單 -->
-                                                                                <div class="btn_grp pc_select">
-                                                                                    <button type="button" class="btn active">文化局圖書館</button>
-                                                                                    <button type="button" class="btn">世賢圖書館</button>
-                                                                                    <button type="button" class="btn">黃賓圖書館</button>
+                                                                <h2  class="wow fadeIn" data-wow-duration=".8s">各館資訊</h2>
 
-                                                                                </div>
-                                                                                <!-- 手機版選單 -->
-                                                                                <div class="form_grp mobile_select">
-                                                                                    <select name="" id="selectSample">
-                                                                                        <option value="">文化局圖書館</option>
-                                                                                        <option value="">世賢圖書館</option>
-                                                                                        <option value="">黃賓圖書館</option>
-                                                                                    </select>
-                                                                                </div>
+                                                                <div class="col-6-3-3 info_content">
+                                                                    <div class="container">
+                                                                        <div class="col">
+                                                                            <div class="info_list_wrap  wow fadeInLeft" data-wow-duration=".8s" data-wow-delay=".5s">
+                                                                                <form action="">
+                                                                                    <div class="library_select">
+                                                                                        <!-- PC版選單 -->
+                                                                                        <div class="btn_grp pc_select">
+                                                                                            <button type="button" class="btn active">文化局圖書館</button>
+                                                                                            <button type="button" class="btn">世賢圖書館</button>
+                                                                                            <button type="button" class="btn">黃賓圖書館</button>
+
+                                                                                        </div>
+                                                                                        <!-- 手機版選單 -->
+                                                                                        <div class="form_grp mobile_select">
+                                                                                            <select name="" id="selectSample">
+                                                                                                <option value="">文化局圖書館</option>
+                                                                                                <option value="">世賢圖書館</option>
+                                                                                                <option value="">黃賓圖書館</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                                <ul>
+                                                                                    <li><span class="unit">圖書館</span>週二至週六 09:00-20:00<br>週日 09:00-17:00</li>
+                                                                                    <li><span class="unit">普通閱覽室</span>週二至週六 09:00-21:00<br>週日 08:00-17:00</li>
+                                                                                    <li><span class="unit">視聽室</span>週二至週日 09:00-17:00</li>
+                                                                                    <li><span class="unit">休館日</span>逢週一、含國定假日及選舉日</li>
+                                                                                </ul>
+                                                                                <p>嘉義市東區忠孝路275號　　服務專線   05-2788205</p>
                                                                             </div>
-                                                                        </form>
-                                                                        <ul>
-                                                                            <li><span class="unit">圖書館</span>週二至週六 09:00-20:00<br>週日 09:00-17:00</li>
-                                                                            <li><span class="unit">普通閱覽室</span>週二至週六 09:00-21:00<br>週日 08:00-17:00</li>
-                                                                            <li><span class="unit">視聽室</span>週二至週日 09:00-17:00</li>
-                                                                            <li><span class="unit">休館日</span>逢週一、含國定假日及選舉日</li>
+                                                                        </div>
+                                                                        <div class="col calendar_wrap wow fadeInRight" data-wow-duration=".8s" data-wow-delay=".5s">
+                                                                            <div class="calendar">
+
+                                                                            </div>
+                                                                            <div class="tip">
+                                                                                <span class="closed">休館日</span><span class="activity_day">活動日</span>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col rimg"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="full map">
+                                                                <div class="container">
+                                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2361935321146!2d120.45022681542851!3d23.488000604665388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e95cc7b56092d%3A0x61ec6df0f212a54b!2zNjAw5ZiJ576p5biC5p2x5Y2A5b-g5a2d6LevMjc16Jmf!5e0!3m2!1szh-TW!2stw!4v1660545407883!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+
+                                                        <section class="ad">
+                                                            <div class="container">
+                                                                <div class="adSlider">
+                                                                    <div class="img-container">
+                                                                        <a href="#" title="">
+                                                                            <picture>
+                                                                                <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55">
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/180x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/180x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/180x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/180x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/180x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/180x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="img-container">
+                                                                            <a href="#" title="">
+                                                                                <picture>
+                                                                                    <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <source medsrcset="https://via.placeholder.com/165x55"></source>
+                                                                                    <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
+                                                                                    <noscript><img src="https://via.placeholder.com/165x55"></noscript>
+                                                                                </picture>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div>
+
+                                                        <!-- fatfooter Start -->
+                                                        <section class="fatfooter">
+                                                            <div class="container">
+                                                                <button type="button" name="收合" class="btn btn-fatfooter">CLOSE</button>
+                                                                <nav>
+                                                                    <ul>
+                                                                        <li><a href="#">關於圖書館</a>
+                                                                            <ul>
+                                                                                <li><a href="#">各館資訊</a></li>
+                                                                                <li><a href="#">使用規定</a></li>
+                                                                                <li><a href="#">開館時間</a></li>
+                                                                                <li><a href="#">圖書館政策</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="#">訊息公告</a>
+                                                                            <ul>
+                                                                                <li><a href="#">重要公告</a></li>
+                                                                                <li><a href="#">活動資訊</a></li>
+                                                                                <li><a href="#">新聞稿</a></li>
+                                                                                <li><a href="#">轉知訊息</a></li>
+                                                                                <li><a href="#">統計報表</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="#">讀者服務</a>
+                                                                            <ul>
+                                                                                <li><a href="#">館藏査詢</a></li>
+                                                                                <li><a href="#">使用規則</a></li>
+                                                                                <li><a href="#">常見問答</a></li>
+                                                                                <li><a href="#">活動報名</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="#">數位資源</a>
+                                                                            <ul>
+                                                                                <li><a href="#">HyReadebook</a></li>
+                                                                                <li><a href="#">udn讀書館</a></li>
+                                                                                <li><a href="#">iRead ebook</a></li>
+                                                                                <li><a href="#">華藝電子書</a></li>
+                                                                                <li><a href="#">台灣雲端書庫</a></li>
+                                                                                <li><a href="#">@嘉義市</a></li>
+                                                                                <li><a href="#">電子書服務平台</a></li>
+                                                                                <li><a href="#">設計師之手</a></li>
+                                                                                <li><a href="#">解密圖書DNA</a></li>
+                                                                                <li><a href="#">圓夢繪本資料庫</a></li>
+                                                                                <li><a href="#">電影與文學資料庫</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="#">主題活動</a>
+                                                                            <ul>
+                                                                                <li><a href="#">閱讀起步走</a></li>
+                                                                                <li><a href="#">桃城文學獎</a></li>
+                                                                                <li><a href="#">多元閱讀活動</a></li>
+                                                                                <li><a href="#">本土語言閱讀活動</a></li>
+                                                                                <li><a href="#">提升民眾英語學習力</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </section>
+                                                        <!-- fatfooter End -->
+                                                        <!-- footer Start-->
+                                                        <footer>
+                                                            <div class="container">
+                                                                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+
+                                                                <div class="col-6-6">
+                                                                    <div class="col">
+                                                                        <div class="footer_info">
+                                                                            <p class="Copyright">
+                                                                                地址：60081 嘉義市忠孝路275號     電話：(05)2788225
+                                                                            </p>
+                                                                            <p>
+                                                                                <span class="counter">今日瀏覽人次：<em>11,205</em></span>
+                                                                                <span class="counter">本月瀏覽人次：<em>22,666</em></span>
+                                                                            </p>
+                                                                            <p>
+                                                                                <span class="counter">年度瀏覽人次：<em>300,456</em></span>
+                                                                                <span class="counter">累計瀏覽人次：<em>2,022,3336</em></span>
+                                                                            </p>
+                                                                            <p>
+                                                                                <span class="update">更新日期：<em>2022/07/01</em></span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="footer_icon">
+                                                                            <a target="_blank" href="javascript:;" title="另開視窗">
+                                                                                <img src="images/basic/accessibility.jpg" alt="">
+                                                                            </a>
+                                                                            <a target="_blank" href="javascript:;" title="另開視窗">
+                                                                                <img src="images/basic/egov.png" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <ul class="footer_link">
+                                                                            <li><a href="javascript:;">隱私權政策</a></li>
+                                                                            <li><a href="javascript:;">網站安全政策</a></li>
+                                                                            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
                                                                         </ul>
-                                                                        <p>嘉義市東區忠孝路275號　　服務專線   05-2788205</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col calendar_wrap wow fadeInRight" data-wow-duration=".8s" data-wow-delay=".5s">
-                                                                    <div class="calendar">
-
-                                                                    </div>
-                                                                    <div class="tip">
-                                                                        <span class="closed">休館日</span><span class="activity_day">活動日</span>
+                                                                        <p class="copyright">版權所有 ©2021 All Rights Reserved</p>
                                                                     </div>
 
+                                                                    <div class="col">
+                                                                        <div class="qrcode">
+                                                                            <ul>
+                                                                                <li><img src="images/qrcode.jpg" alt=""><span>Android</span></li>
+                                                                                <li><img src="images/qrcode2.jpg" alt=""><span>ios</span></li>
+                                                                            </ul>
+
+                                                                        </div>
+                                                                        <div class="browser">建議瀏覽器：IE10.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</div>
+                                                                    </div>
+
                                                                 </div>
-                                                                <div class="col rimg"></div>
+
                                                             </div>
-                                                        </div>
+                                                        </footer>
+                                                        <!-- footer End -->
                                                     </div>
-                                                    <div class="full map">
-                                                        <div class="container">
-                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2361935321146!2d120.45022681542851!3d23.488000604665388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e95cc7b56092d%3A0x61ec6df0f212a54b!2zNjAw5ZiJ576p5biC5p2x5Y2A5b-g5a2d6LevMjc16Jmf!5e0!3m2!1szh-TW!2stw!4v1660545407883!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                                        </div>
-                                                    </div>
-                                                </section>
+                                                    <a href="javascript:;" class="scrollToTop">回頁首</a>
+                                                    <!-- JQ -->
+                                                    <script src="js/jquery-3.3.1.min.js"></script>
+                                                    <!-- 外掛 plugin js -->
+                                                    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+                                                    <script src="vendor/slick/slick.js "></script><!-- slick -->
+                                                    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+                                                    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+                                                    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+                                                    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+                                                    <script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
 
-                                                <section class="ad">
-                                                    <div class="container">
-                                                        <div class="adSlider">
-                                                            <div class="img-container">
-                                                                <a href="#" title="">
-                                                                    <picture>
-                                                                        <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55">
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/180x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/180x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/180x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/180x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/180x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/180x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="img-container">
-                                                                    <a href="#" title="">
-                                                                        <picture>
-                                                                            <source media="(min-width: 1200px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 992px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source media="(min-width: 576px)" srcset="https://via.placeholder.com/165x55"></source>
-                                                                            <source medsrcset="https://via.placeholder.com/165x55"></source>
-                                                                            <img data-original="https://via.placeholder.com/165x55" class="lazy contain">
-                                                                            <noscript><img src="https://via.placeholder.com/165x55"></noscript>
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                </div>
+                                                    <!-- hyUI -->
+                                                    <script src="js/hyui.js"></script>
+                                                    <!-- 客製js -->
+                                                    <script src="js/customize.js"></script>
+                                                    <!-- WOW -->
+                                                    <script src="vendor/wow/wow.min.js"></script>
+                                                    <script>
+                                                        new WOW().init();
+                                                    </script>
+                                                    <script>
+                                                        $(function() {
+                                                            $('.calendar').pignoseCalendar({
+                                                                lang: 'ch',
+                                                                disabledWeekdays: [1],
+                                                                disabledDates: [
+                                                                '2019-11-30',
+                                                                ],
+                                                                scheduleOptions: {
+                                                                    colors: {
+                                                                        event: '#f1f1f1',
+                                                                    }
+                                                                },
+                                                                schedules: [{
+                                                                    name: 'event',
+                                                                    date: '2019-11-16'
+                                                                }, {
+                                                                    name: 'event',
+                                                                    date: '2019-11-23'
+                                                                }],
 
-                                                <!-- fatfooter Start -->
-                                                <section class="fatfooter">
-                                                    <div class="container">
-                                                        <button type="button" name="收合" class="btn btn-fatfooter">CLOSE</button>
-                                                        <nav>
-                                                            <ul>
-                                                                <li><a href="#">關於圖書館</a>
-                                                                    <ul>
-                                                                        <li><a href="#">各館資訊</a></li>
-                                                                        <li><a href="#">使用規定</a></li>
-                                                                        <li><a href="#">開館時間</a></li>
-                                                                        <li><a href="#">圖書館政策</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="#">訊息公告</a>
-                                                                    <ul>
-                                                                        <li><a href="#">重要公告</a></li>
-                                                                        <li><a href="#">活動資訊</a></li>
-                                                                        <li><a href="#">新聞稿</a></li>
-                                                                        <li><a href="#">轉知訊息</a></li>
-                                                                        <li><a href="#">統計報表</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="#">讀者服務</a>
-                                                                    <ul>
-                                                                        <li><a href="#">館藏査詢</a></li>
-                                                                        <li><a href="#">使用規則</a></li>
-                                                                        <li><a href="#">常見問答</a></li>
-                                                                        <li><a href="#">活動報名</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="#">數位資源</a>
-                                                                    <ul>
-                                                                        <li><a href="#">HyReadebook</a></li>
-                                                                        <li><a href="#">udn讀書館</a></li>
-                                                                        <li><a href="#">iRead ebook</a></li>
-                                                                        <li><a href="#">華藝電子書</a></li>
-                                                                        <li><a href="#">台灣雲端書庫</a></li>
-                                                                        <li><a href="#">@嘉義市</a></li>
-                                                                        <li><a href="#">電子書服務平台</a></li>
-                                                                        <li><a href="#">設計師之手</a></li>
-                                                                        <li><a href="#">解密圖書DNA</a></li>
-                                                                        <li><a href="#">圓夢繪本資料庫</a></li>
-                                                                        <li><a href="#">電影與文學資料庫</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="#">主題活動</a>
-                                                                    <ul>
-                                                                        <li><a href="#">閱讀起步走</a></li>
-                                                                        <li><a href="#">桃城文學獎</a></li>
-                                                                        <li><a href="#">多元閱讀活動</a></li>
-                                                                        <li><a href="#">本土語言閱讀活動</a></li>
-                                                                        <li><a href="#">提升民眾英語學習力</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </section>
-                                                <!-- fatfooter End -->
-                                                <!-- footer Start-->
-                                                <footer>
-                                                    <div class="container">
-                                                        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                                                            });
+                                                        });
+                                                    </script>
 
-                                                        <div class="col-6-6">
-                                                            <div class="col">
-                                                                <div class="footer_info">
-                                                                    <p class="Copyright">
-                                                                        地址：60081 嘉義市忠孝路275號     電話：(05)2788225
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="counter">今日瀏覽人次：<em>11,205</em></span>
-                                                                        <span class="counter">本月瀏覽人次：<em>22,666</em></span>
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="counter">年度瀏覽人次：<em>300,456</em></span>
-                                                                        <span class="counter">累計瀏覽人次：<em>2,022,3336</em></span>
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="update">更新日期：<em>2022/07/01</em></span>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="footer_icon">
-                                                                    <a target="_blank" href="javascript:;" title="另開視窗">
-                                                                        <img src="images/basic/accessibility.jpg" alt="">
-                                                                    </a>
-                                                                    <a target="_blank" href="javascript:;" title="另開視窗">
-                                                                        <img src="images/basic/egov.png" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <ul class="footer_link">
-                                                                    <li><a href="javascript:;">隱私權政策</a></li>
-                                                                    <li><a href="javascript:;">網站安全政策</a></li>
-                                                                    <li><a href="javascript:;">政府網站資料開放宣告</a></li>
-                                                                </ul>
-                                                                <p class="copyright">版權所有 ©2021 All Rights Reserved</p>
-                                                            </div>
+                                                </body>
 
-                                                            <div class="col">
-                                                                <div class="qrcode">
-                                                                    <ul>
-                                                                        <li><img src="images/qrcode.jpg" alt=""><span>Android</span></li>
-                                                                        <li><img src="images/qrcode2.jpg" alt=""><span>ios</span></li>
-                                                                    </ul>
-
-                                                                </div>
-                                                                <div class="browser">建議瀏覽器：IE10.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</div>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </footer>
-                                                <!-- footer End -->
-                                            </div>
-                                            <a href="javascript:;" class="scrollToTop">回頁首</a>
-                                            <!-- JQ -->
-                                            <script src="js/jquery-3.3.1.min.js"></script>
-                                            <!-- 外掛 plugin js -->
-                                            <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-                                            <script src="vendor/slick/slick.js "></script><!-- slick -->
-                                            <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
-                                            <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
-                                            <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
-                                            <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
-                                            <script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
-
-                                            <!-- hyUI -->
-                                            <script src="js/hyui.js"></script>
-                                            <!-- 客製js -->
-                                            <script src="js/customize.js"></script>
-                                            <!-- WOW -->
-                                            <script src="vendor/wow/wow.min.js"></script>
-                                            <script>
-                                                new WOW().init();
-                                            </script>
-                                            <script>
-                                                $(function() {
-                                                    $('.calendar').pignoseCalendar({
-                                                        lang: 'ch',
-                                                        disabledWeekdays: [1],
-                                                        disabledDates: [
-                                                        '2019-11-30',
-                                                        ],
-                                                        scheduleOptions: {
-                                                            colors: {
-                                                                event: '#f1f1f1',
-                                                            }
-                                                        },
-                                                        schedules: [{
-                                                            name: 'event',
-                                                            date: '2019-11-16'
-                                                        }, {
-                                                            name: 'event',
-                                                            date: '2019-11-23'
-                                                        }],
-
-                                                    });
-                                                });
-                                            </script>
-
-                                        </body>
-
-                                        </html>
+                                                </html>
