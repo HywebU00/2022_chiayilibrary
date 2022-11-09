@@ -1,19 +1,22 @@
 // 自行加入的JS請寫在這裡
 $(function() {
-    // 首頁輪播
-    $(".mpSlider").slick({
-      mobileFirst: true,
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 5000,
-      autoplay: true,
-      fade: true,
-      lazyLoaded: true,
-      lazyLoad: "ondemand",
-      ease: "ease",
-      customPaging: function (slider, i) {
-        var title = $(slider.$slides[i]).find("img").attr("alt").trim();
+
+// 首頁輪播
+$('.mpSlider').slick({
+    mobileFirst: true,
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 5000,
+    autoplay: true,
+    fade: true,
+    lazyLoaded: true,
+    lazyLoad: 'ondemand',
+    ease: 'ease',
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    customPaging: function(slider, i) {
+        var title = $(slider.$slides[i]).find('img').attr('alt').trim();
         return $('<button type="button" aria-label="' + title + '"/>').text(title);
     }
 });

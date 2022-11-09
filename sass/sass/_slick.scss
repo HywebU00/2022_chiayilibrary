@@ -89,24 +89,24 @@
         height: 20px;
         margin:0 2px;
         @include screen('mobile') {
-           width: 30px; 
-       }
-       button{
+         width: 30px; 
+     }
+     button{
         width: 60px;
         height: 2px;
         @include screen('mobile') {
-           width: 30px; 
-       }
-       &:before{
+         width: 30px; 
+     }
+     &:before{
         width: 60px;
         height: 2px;
         border-radius: 0;
         top:5px;
         left:5px;
         @include screen('mobile') {
-           width: 30px; 
-       }
-   }
+         width: 30px; 
+     }
+ }
 }
 }
 }
@@ -574,7 +574,7 @@
 }
 
 div{
-   @include aspect-ratio(4,2.8); 
+ @include aspect-ratio(4,2.8); 
 }
 
 a{
@@ -932,10 +932,10 @@ img {
     margin: 0;
     position: absolute;
     @include screen('tablet') {
-     left: 4%;
-     top:30px; 
- }
- @include screen('mobile') {
+       left: 4%;
+       top:30px; 
+   }
+   @include screen('mobile') {
     left: 1%;
     top:20px;  
 }
@@ -1391,18 +1391,18 @@ li {
     // justify-content: flex-start;
     // padding-left: 90px;
     @include screen('mobile') {
-       bottom: -20px; 
-   }
-   li {
+     bottom: -20px; 
+ }
+ li {
       /* 兩點的距離 */
       margin: 0;
       width: 90px;
       height: 3px;
       @include screen('mobile') {
-       width: 30px!important;
-       height: 2px!important; 
-   }
-   button {
+         width: 30px!important;
+         height: 2px!important; 
+     }
+     button {
         /* 點的顏色 */
         background: #007B74;
         opacity: 1;
