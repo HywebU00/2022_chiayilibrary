@@ -42,18 +42,11 @@
     @include gutter(0);
     .img-container {
         @include aspect-ratio(2, 1); //PC版比例
-        // @include screen('mobile') {
-        //      @include aspect-ratio(5, 1.5);
-        // }
-    }
-    @media screen and (min-width: 1400px){
-        .slick-prev{
-            left:-80px;
-        }
-        .slick-next{
-            right:-80px;
-        }  
-    }
+        @include screen('mobile') {
+         @include aspect-ratio(2, 1);
+     }
+ }
+
 //     .slick-prev, .slick-next{
 //         background-color:rgba($primaryColor, .8);
 //         background-size:25px 25px;
@@ -77,42 +70,36 @@
 // }
 .slick-dots{
     text-align: left;
-    padding:0;
-    bottom:-10px;
-    left:-5px;
-    margin: 0;
-    @include screen('mobile') {
-        left:20px;
-    }
+    padding:0 5px;
+    bottom:-.5em;
+    left:-.6em;
     li{
         width: 60px;
         height: 20px;
-        margin:0 2px;
+        margin:0 1px;
+        button{
+            width: 60px;
+            height: 20px;
+            &:before{
+                width: 60px;
+                height: 2px;
+                border-radius: 0;
+                top:5px;
+                left:5px;
+            }
+        }
         @include screen('mobile') {
-         width: 30px; 
-     }
-     button{
-        width: 60px;
-        height: 2px;
-        @include screen('mobile') {
-         width: 30px; 
-     }
-     &:before{
-        width: 60px;
-        height: 2px;
-        border-radius: 0;
-        top:5px;
-        left:5px;
-        @include screen('mobile') {
-         width: 30px; 
-     }
- }
+         width: 30px;
+         left:32px;
+         button{
+            width: 30px;
+            &:before{
+              width: 30px;  
+          }
+      } 
+  }
 }
 }
-}
-
-
-
 }
 
 // slick._scss
@@ -229,15 +216,14 @@
         &.slick-active {
             button {
                 &:before {
-                    background: #000;
+                    background: $aColor;
                 }
                 &:hover,
                 &:focus {
                     &:before {
                         opacity: 1;
                         color: black;
-                        // background: adjust_hue(saturate(lighten($aColor, 7), 18), -17);
-                        background: #000;
+                        background: adjust_hue(saturate(lighten($aColor, 7), 18), -17);
                     }
                 }
             }
@@ -1031,9 +1017,6 @@ li {
 }
 
 
-
-
-
 // .slick-prev,
 // .slick-next{
 //   position: absolute;
@@ -1195,278 +1178,4 @@ li {
             }
         }
     }
-}
-
-
-//
-.mpSlider5 {
-    width: 100%;
-    padding: 0;
-    position: relative;
-    margin: 0 auto;
-
-    @include screen('mobile') {
-        // padding-top: 60px;
-    }
-    @media screen and (min-width: 1400px){
-        .slick-prev{
-            left:-80px;
-        }
-        .slick-next{
-            right:-80px;
-        }  
-    }
-
-    .slick-slide {
-        overflow: hidden;
-        @include aspect-ratio(2, 1);
-        &.img-container {
-            width: 100%;
-            @include aspect-ratio(2, 1);
-            a {
-                position: absolute;
-            }
-        }
-        // @include screen('tablet') {
-        //     @include aspect-ratio(6, 2);
-        //     &.img-container {
-        //         width: 100%;
-        //         @include aspect-ratio(6, 2);
-        //     }
-        // }
-        // @include screen('mobile') {
-        //     @include aspect-ratio(4, 2);
-        //     &.img-container {
-        //         width: 100%;
-        //         @include aspect-ratio(4, 2);
-        //     }
-        // }
-        img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          object-fit: cover;
-          transition: transform 10s ease-out 0.4s;
-          transform: scale(1);
-          z-index: 1;
-      }
-      &.slick-current {
-          img {
-            transform: scale(1.1);
-            animation-name: imgdynamic;
-            animation-duration: 5s;
-        }
-        a {
-            .wordcontent {
-              .bigword {
-                animation-name: worddynamic;
-                animation-duration: 5s;
-            }
-            .middleword,
-            .smallword {
-                animation-name: worddynamics;
-                animation-duration: 5s;
-                animation-timing-function: ease-in;
-            }
-        }
-    }
-}
-&.slick-current.start img {
-  transition: transform 0s 0s;
-  transform: scale(1);
-}
-@keyframes imgdynamic {
-  0% {
-    transform: scale(1);
-}
-100% {
-    transform: scale(1.1);
-}
-}
-.wordcontent {
-  position: absolute;
-  z-index: 2;
-  font-size: 1.5em;
-  color: #fff;
-  left: 40%;
-  top: 35%;
-  text-shadow: rgb(46, 46, 46) 0px 4px 5px;
-  @include screen('tablet') {
-    left: 30%;
-}
-@include screen('mobile') {
-    left: 28%;
-}
-&.align_center {
-    top: 35%;
-}
-&.align_bottom {
-    top: auto;
-    bottom: 40px;
-}
-.bigword,
-.middleword,
-.smallword {
-    opacity: 0;
-    line-height:1.05em;
-}
-.bigword {
-    font-size: 2em;
-    margin-bottom: 0.2em;
-    font-weight: bold;
-    letter-spacing: 12px;
-    // font-family: NotoSansCJKtc-Regular, jf-jinxuan-medium;
-    @include screen('tablet') {
-      font-size: 2em;  
-  }
-  @include screen('mobile') {
-    font-size: 1.25em;
-    letter-spacing: 5px;
-}
-}
-.middleword {
-    font-size: 1.25em;
-    margin-bottom: 0.2em;
-    font-weight: 400;
-    // font-family: NotoSansCJKtc-Regular, jf-jinxuan-medium;
-    @include screen('tablet') {
-        font-size: 1em;
-    }
-    @include screen('mobile') {
-        font-size: .75em;
-    }
-}
-.smallword {
-    font-size: 0.938em;
-    margin-bottom: 0.2em;
-    font-weight: 300;
-        // font-family: jf-jinxuan-bold; //金萱 七分糖
-        // font-family: jf-jinxuan-medium; //金萱 半分糖
-    }
-    @keyframes worddynamic {
-        0% {
-          transform: translateX(70px);
-          opacity: 0;
-      }
-      25% {
-          transform: translateX(0px);
-          opacity: 1;
-      }
-      95% {
-          transform: translateX(0px);
-          opacity: 1;
-      }
-      100% {
-          transform: translateX(-70px);
-          opacity: 0;
-      }
-  }
-  @keyframes worddynamics {
-    0% {
-      transform: translateX(-70px);
-      opacity: 0;
-  }
-  25% {
-      transform: translateX(0px);
-      opacity: 1;
-  }
-  95% {
-      transform: translateX(0px);
-      opacity: 1;
-  }
-  100% {
-      transform: translateX(70px);
-      opacity: 0;
-  }
-}
-}
-}
-  // 點點
-  .slick-dots {
-    justify-content: center;
-    align-items: center;
-    bottom: -40px;
-    // justify-content: flex-start;
-    // padding-left: 90px;
-    @include screen('mobile') {
-     bottom: -20px; 
- }
- li {
-      /* 兩點的距離 */
-      margin: 0;
-      width: 90px;
-      height: 3px;
-      @include screen('mobile') {
-         width: 30px!important;
-         height: 2px!important; 
-     }
-     button {
-        /* 點的顏色 */
-        background: #007B74;
-        opacity: 1;
-        width: 90px;
-        height: 3px;
-        border-radius: 0;
-        position: relative;
-        &:hover,
-        &:focus {
-          opacity: 1;
-          /* 點hover的顏色 */
-      }
-      &:focus {
-          opacity: 1;
-          /* 點focus的顏色 */
-          background: #007B74;
-          // box-shadow: 0px 0px 0px 1px #ff3e4d; /* 讓focus過去的點大一些 */
-      }
-  }
-  &.slick-active {
-    button {
-      opacity: 1;
-          /* 點 active 的顏色 */
-          background: #007B74;
-          &:before {
-            content: "";
-            width: 90px;
-            height: 3px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            max-height: 100%;
-            max-width: 100%;
-            animation-name: dots;
-            animation-duration: 5s;
-            background: $color-yellow;
-            @include screen('mobile') {
-                width: 30px!important;
-                height: 2px!important; 
-            }
-        }
-        &:hover {
-            /* 點 active  hover的顏色 */
-            background: $color-yellow;
-        }
-        &:focus {
-            /* 點 active  focus的顏色 */
-            background: $color-yellow;
-            &:before {
-              @keyframes dots {
-                from {
-                  width: 0;
-              }
-              to {
-                  width: 100px;
-              }
-          }
-      }
-  }
-
-}
-}
-}
-}
 }

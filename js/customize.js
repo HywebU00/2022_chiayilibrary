@@ -1,22 +1,19 @@
 // 自行加入的JS請寫在這裡
 $(function() {
-
-// 首頁輪播
-$('.mpSlider').slick({
-    mobileFirst: true,
-    dots: true,
-    arrows: true,
-    infinite: true,
-    speed: 5000,
-    autoplay: true,
-    fade: true,
-    lazyLoaded: true,
-    lazyLoad: 'ondemand',
-    ease: 'ease',
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    customPaging: function(slider, i) {
-        var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+    // 首頁輪播
+    $(".mpSlider").slick({
+      mobileFirst: true,
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 1000,
+      autoplay: true,
+      fade: true,
+      lazyLoaded: true,
+      lazyLoad: "ondemand",
+      ease: "ease",
+      customPaging: function (slider, i) {
+        var title = $(slider.$slides[i]).find("img").attr("alt").trim();
         return $('<button type="button" aria-label="' + title + '"/>').text(title);
     }
 });
@@ -211,33 +208,8 @@ setTimeout(function () {
 
 });
 
-//mpSlider5
-var $carousel = $(".mpSlider5").slick({
-  mobileFirst: true,
-  dots: true,
-  arrow: true,
-  infinite: true,
-  speed:0,
-  autoplaySpeed: 5000, //配合點的時間
-  autoplay: true,
-  fade: true,
-  lazyLoaded: true,
-  lazyLoad: "ondemand",
-  ease: "ease",
-  pauseOnHover: false
-});
-/* The first slide will not get the animation,
-therefore I add and remove a class that will trigger the css animation */
-$carousel.find(".slick-current").addClass("start");
-/* I use a set-timeoutfunction to hinder optimization
-of adding and removing classes */
-setTimeout(function () {
-  $carousel.find(".start").removeClass("start");
-}, 0);
 
-
-
-//mpSlider3
+//test
 $('.mpSlider3 .slick')
 .on('init', () => {
     $('.slick-slide[data-slick-index="-2"]').addClass('lt2');

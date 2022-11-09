@@ -172,7 +172,7 @@ div.function {
             a{
                 color:$color-word;
                 display: block;
-                padding: 50px .5em .5em .5em;
+                padding: 46px .5em .5em .5em;
                 &:hover, &:focus{
                     color:$primaryColor;
                 }
@@ -182,40 +182,40 @@ div.function {
         .fb{
             a{
                 background: url('../images/fun2icon01.png')no-repeat center top;
-                background-size: 48px auto;
+                background-size: 42px auto;
                 &:hover, &:focus{
                     background: url('../images/fun2icon01ov.png')no-repeat center top;
-                    background-size: 48px auto; 
+                    background-size: 42px auto; 
                 }
             }
         }
         .se{
             a{
                 background: url('../images/fun2icon02.png')no-repeat center top;
-                background-size: 48px auto;
+                background-size: 42px auto;
                 &:hover, &:focus{
                     background: url('../images/fun2icon02ov.png')no-repeat center top;
-                    background-size: 48px auto; 
+                    background-size: 42px auto; 
                 }
             }
         }
         .ca{
             a{
                 background: url('../images/fun2icon03.png')no-repeat center top;
-                background-size: 48px auto;
+                background-size: 42px auto;
                 &:hover, &:focus{
                     background: url('../images/fun2icon03ov.png')no-repeat center top;
-                    background-size: 48px auto; 
+                    background-size: 42px auto; 
                 }
             }
         }
         .qa{
             a{
                 background: url('../images/fun2icon04.png')no-repeat center top;
-                background-size: 48px auto;
+                background-size: 42px auto;
                 &:hover, &:focus{
                     background: url('../images/fun2icon04ov.png')no-repeat center top;
-                    background-size: 48px auto; 
+                    background-size: 42px auto; 
                 }
             }
         }

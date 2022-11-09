@@ -57,7 +57,7 @@ body {
 
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     @include screen('mobile') {
-        padding-top: 84px;
+        padding-top: 120px;
         background-image: none;
     }
     h2 {
@@ -93,7 +93,7 @@ body {
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
     border-top: solid 1px #313131;
-    width: 95%;
+    max-width: 1200px;
     padding-top: 20px;
 
     @include screen('mobile') {
