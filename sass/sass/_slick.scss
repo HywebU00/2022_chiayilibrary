@@ -401,7 +401,7 @@
     height: 45px;
     width: 45px;
     line-height: 0;
-    font-size: 0em;
+    font-size: 0;
     cursor: pointer;
     background: transparent;
     color: transparent;
@@ -460,7 +460,7 @@
     .controls {
         text-align: center;
         font-weight: bold;
-        max-width: 100px;
+        max-width: 6.25rem;
         color: #FFF;
         padding: .2em .5em;
         margin: 0px auto;
@@ -835,7 +835,7 @@ img {
       display: block;
       // background: #eee;
       color: #fff;
-      font-size: 36px;
+      font-size: 2.25rem;
       @include aspect-ratio(4,2.5);
 
 
