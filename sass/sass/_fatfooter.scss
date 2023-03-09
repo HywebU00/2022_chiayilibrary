@@ -61,8 +61,7 @@
                 top:-.4em;
             }
         }
-        &:hover,
-        &:focus {
+        &:hover {
             //background: darken($aHover, 10);
             color: #fff;
             text-decoration: none;
@@ -72,6 +71,11 @@
             outline: none;
             border: none;
             cursor: pointer;
+        }
+        &:focus {
+            border: dotted 2px $focus-boder;
+            background: $focus-bg;
+            color:$focus-color;
         }
         &.close {
             @include screen('mobile'){
@@ -134,12 +138,16 @@
                     font-weight: bold;
                     padding: 0 0 1em 0;
                     color:#fff;
+                    margin-right: 1em;
                     @include box-sizing;
                     &:hover{
                         text-shadow: 0 1px 1px rgba(#000, .3);
                     }
                     &:focus{
-                        box-shadow: 0 0px 0px 1px $secondaryColor inset;
+                        // box-shadow: 0 0px 0px 1px $secondaryColor inset;
+                        border: dotted 2px $focus-boder;
+                        background: $focus-bg;
+                        color:$focus-color!important;
                     }
                 }
                 ul {

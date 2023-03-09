@@ -674,6 +674,9 @@ section {
         }
         a {
             @include aSetting_nocolor;
+            &:focus{
+                color: $focus-color;
+            }
         }
         time {
             display: inline-block;
@@ -1000,6 +1003,12 @@ section {
             color:#fff;
             box-shadow:none;
         }
+        &:focus{
+            border: dotted 2px $focus-boder;
+            box-shadow: none;
+            // background: $focus-bg;
+            // color:$focus-color;
+        }
     }
     button{
         &.active{
@@ -1237,8 +1246,11 @@ section {
         box-shadow: 0 0px 0px 2px $primaryColor inset;
     }
     &:focus{
-        box-shadow: 0 0px 0px 2px $aHover inset;
-        background: $secondaryColor;
+        // box-shadow: 0 0px 0px 2px $aHover inset;
+        // background: $secondaryColor;
+        border: dotted 2px $focus-boder;
+        background: $focus-bg;
+        color:$focus-color;
     }
 }
 .close-btn{
@@ -1257,8 +1269,14 @@ section {
         &:hover{
            background: darken($secondaryColor,15); 
        }
-   }
-   .login-animate-right{
+       &:focus{
+        border: dotted 2px $focus-boder;
+        background: $focus-bg;
+        color:$focus-color;
+        box-shadow: none;
+    }
+}
+.login-animate-right{
     width: 300px;
     min-height: 5em;
     padding:2.5em 1em 1em;
@@ -1293,8 +1311,12 @@ section {
             background: $secondaryColor;
             color:#fff;
             border: none;
-            &:hover{
-               background: darken($secondaryColor,15); 
+            &:hover, &:focus{
+               // background: darken($secondaryColor,15); 
+               border: dotted 2px $focus-boder;
+               background: $focus-bg!important;
+               color:$focus-color;
+               box-shadow: none;
            }
        }
 

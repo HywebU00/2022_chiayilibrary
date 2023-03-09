@@ -246,9 +246,12 @@
                 padding: .1em 40px .1em .5em;
                 border-radius: 0 .125em .125em 0;
                 &:focus {
-                    box-shadow: 0px 0px 0px 3px $aHover;
-                    outline: none;
-                    border: none;
+                    // box-shadow: 0px 0px 0px 3px $aHover;
+                    // outline: none;
+                    // border: none;
+                    border: dotted 2px $focus-boder!important;
+                    background: $focus-bg;
+                    color:$focus-color;
                 }
             }
             &[type="submit"] {
@@ -274,51 +277,55 @@
                 &:focus {
                     opacity: 1;
                     box-shadow: 0px 0px 0px 2px $aHover inset;
+
                 }
                 &:focus {
-                    outline: 2px solid $secondaryColor;
-                }
-            }
-        }
+                   border: dotted 2px $focus-boder!important;
+                   background: $focus-bg url("../images/search-btn-ov.png") no-repeat center center;
+                   background-size: 32px auto;
+                   color:$focus-color;
+               }
+           }
+       }
+   }
+   .btn_grp {
+    padding: .2em;
+    margin-bottom: 0;
+    float: right;
+    input, input[type="submit"] {
+        margin: 0;
+        padding: .4em 1em .4em !important;
+        font-size: .813em;
     }
-    .btn_grp {
-        padding: .2em;
-        margin-bottom: 0;
-        float: right;
-        input, input[type="submit"] {
-            margin: 0;
-            padding: .4em 1em .4em !important;
-            font-size: .813em;
-        }
-    }
-    .keywordHot {
-        display: block;
-        vertical-align: middle;
-        margin-left: .5em;
-        padding: .1em 0 .3em;
-        clear: both;
-        ul {
+}
+.keywordHot {
+    display: block;
+    vertical-align: middle;
+    margin-left: .5em;
+    padding: .1em 0 .3em;
+    clear: both;
+    ul {
+        display: inline-block;
+        font-size: .813em;
+        line-height: 1.65em;
+        margin: 0;
+        padding: 0;
+        &:before {
             display: inline-block;
-            font-size: .813em;
-            line-height: 1.65em;
-            margin: 0;
+            content: "";
+            color: #999;
+            float: left;
+        }
+        li {
+            margin: 0 .6em 0 0;
             padding: 0;
-            &:before {
-                display: inline-block;
-                content: "";
-                color: #999;
-                float: left;
-            }
-            li {
-                margin: 0 .6em 0 0;
-                padding: 0;
-                display: inline-block;
-            }
-            a {
-                @include aSetting_nocolor;
-            }
+            display: inline-block;
+        }
+        a {
+            @include aSetting_nocolor;
         }
     }
+}
     // m_search
     &.m_search {
         width: 100% !important;

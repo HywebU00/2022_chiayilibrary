@@ -124,6 +124,9 @@
         }
         a {
             @include aSetting_nocolor;
+            &:focus{
+                color: $focus-color;
+            }
         }
         time {
             display: inline-block;

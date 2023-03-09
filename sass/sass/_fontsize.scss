@@ -19,7 +19,7 @@
         padding: 0;
         li {
             width: 30px;
-            height: 30px;
+            height: 34      px;
             font-size: 1em;
             float: left;
             display: block;
@@ -31,17 +31,27 @@
                 border-radius: 50%;
                 background: #F1F1F1;
                 color: #333;
-                &:hover, &:focus {
+                &:hover {
                     background: $aHover;
                     color: #FFF;
+                }
+                &:focus {
+                    border: dotted 2px $focus-boder;
+                    background: $focus-bg;
+                    color:$focus-color;
                 }
                 &.active {
                     background: #282828;
                     color: #FFF;
 
-                    &:hover, &:focus {
+                    &:hover {
                         background: $aHover;
                         color: #FFF;
+                    }
+                    &:focus {
+                        border: dotted 2px $focus-boder;
+                        background: $focus-bg;
+                        color:$focus-color;
                     }
                 }
                 &.small {
