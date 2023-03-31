@@ -27,6 +27,10 @@
         width: 100% !important;
         @include gutter(0);
     }
+    .header.fixed {
+        // display: none;
+        position: absolute;
+    }
     .cp {
         @include gutter(0);
     }
@@ -88,6 +92,26 @@
         li {
             content: "» ";
         }
+    }
+
+    .full.map{
+        width: 100%;
+        min-height: 500px;
+
+        iframe{
+            width: 1100px!important;
+            border: solid 2px #000;
+            height: 500px;
+        }
+    }
+    .function2{
+        display: none;
+    }
+    .reader_service li {
+        margin: 0.5em 0;
+        padding: 0.9em 0;
+        display: inline-block;
+        width: auto;
     }
 
     /* 檔案下載*/
