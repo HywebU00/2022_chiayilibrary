@@ -113,6 +113,11 @@
         display: inline-block;
         width: auto;
     }
+    .book_display{
+        .tabContent{
+            overflow: visible;
+        }
+    }
 
     /* 檔案下載*/
     .file_download {
